@@ -3,27 +3,48 @@ local DEBRIS = "mcl_nether:ancient_debris"
 local NETHERITE_INGOT = "mcl_nether:netherite_ingot"
 local NETHERITE_BLOCK = "mcl_nether:netheriteblock"
 
-minetest.register_craft({
-    output = "mobs_mc:zombie",
-    recipe = {
-        {EGG, "mcl_mobitems:rotten_flesh", EGG},
-        {"mcl_mobitems:rotten_flesh", DEBRIS, "mcl_mobitems:rotten_flesh"},
-        {EGG, "mcl_mobitems:rotten_flesh", EGG}
-    }
-})
+if minetest.settings:get_bool("spawncraft_zombie", true) then
+    minetest.register_craft({
+        output = "mobs_mc:zombie",
+        recipe = {
+            {EGG, "mcl_mobitems:rotten_flesh", EGG},
+            {"mcl_mobitems:rotten_flesh", DEBRIS, "mcl_mobitems:rotten_flesh"},
+            {EGG, "mcl_mobitems:rotten_flesh", EGG}
+        }
+    })
+    if minetest.settings:get_bool("spawncraft_husk", true) then
+        minetest.register_craft({
+            output = "mobs_mc:husk",
+            type = "shapeless",
+            recipe = {
+                {"mobs_mc:husk", "mcl_mobitems:sand"}
+            }
+        })
+    end
+end
 
-minetest.register_craft({
-    output = "mobs_mc:husk",
-    recipe = {
-        {EGG, "mcl_mobitems:rotten_flesh", EGG},
-        {"group:sand", DEBRIS, "group:sand"},
-        {EGG, "mcl_mobitems:rotten_flesh", EGG}
-    }
-})
+if minetest.settings:get_bool("spawncraft_husk", true) then
+    minetest.register_craft({
+        output = "mobs_mc:husk",
+        recipe = {
+            {EGG, "mcl_mobitems:rotten_flesh", EGG},
+            {"group:sand", DEBRIS, "group:sand"},
+            {EGG, "mcl_mobitems:rotten_flesh", EGG}
+        }
+    })
+    if minetest.settings:get_bool("spawncraft_zombie", true) then
+        minetest.register_craft({
+            output = "mobs_mc:husk",
+            type = "shapeless",
+            recipe = {
+                {"mobs_mc:zombie", "mcl_mobitems:rotten_flesh"}
+            }
+        })
+    end
+end
 
-local spawncraft_skeleton = minetest.settings:get_bool("spawncraft_skeleton") ~= false
 
-if spawncraft_skeleton then
+if minetest.settings:get_bool("spawncraft_skeleton", true) then
     minetest.register_craft({
         output = "mobs_mc:skeleton",
         recipe = {
@@ -32,9 +53,18 @@ if spawncraft_skeleton then
             {EGG, "mcl_mobitems:bone", EGG}
         }
     })
+    if minetest.settings:get_bool("spawncraft_stray", true) then
+        minetest.register_craft({
+            output = "mobs_mc:skeleton",
+            type = "shapeless",
+            recipe = {
+                {"mobs_mc:stray", "mcl_mobitems:bone"}
+            }
+        })
+    end
 end
 
-if minetest.setting_getbool("spawncraft_stray") then
+if minetest.settings:get_bool("spawncraft_stray", true) then
     minetest.register_craft({
         output = "mobs_mc:stray",
         recipe = {
@@ -43,5 +73,33 @@ if minetest.setting_getbool("spawncraft_stray") then
             {EGG, "mcl_mobitems:bone", EGG}
         }
     })
+    if minetest.settings:get_bool("spawncraft_skeleton", true) then
+        minetest.register_craft({
+            output = "mobs_mc:stray",
+            type = "shapeless",
+            recipe = {
+                {"mobs_mc:skeleton", "mcl_core:ice"}
+            }
+        })
+    end
 end
 
+if minetest.settings:get_bool("spawncraft_villager", true) then
+    minetest.register_craft({
+        output = "mobs_mc:villager",
+        recipe = {
+            {EGG, "group:bed", EGG},
+            {"mcl_core:emerald", DEBRIS, "mcl_core:emerald"},
+            {EGG, "group:bed", EGG}
+        }
+    })
+    if minetest.settings:get_bool("spawncraft_zombie_villager", true) then
+        minetest.register_craft({
+            output = "mobs_mc:zombie_villager",
+            type = "shapeless",
+            recipe = {
+                {"mobs_mc:villager", "mobs_mc:zombie"}
+            }
+        })
+    end
+end
