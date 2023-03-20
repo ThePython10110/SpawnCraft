@@ -14,10 +14,10 @@ if minetest.settings:get_bool("spawncraft_zombie", true) then
     })
     if minetest.settings:get_bool("spawncraft_husk", true) then
         minetest.register_craft({
-            output = "mobs_mc:husk",
+            output = "mobs_mc:zombie",
             type = "shapeless",
             recipe = {
-                {"mobs_mc:husk", "mcl_mobitems:sand"}
+                {"mobs_mc:husk", "mcl_mobitems:rotten_flesh"}
             }
         })
     end
@@ -37,7 +37,7 @@ if minetest.settings:get_bool("spawncraft_husk", true) then
             output = "mobs_mc:husk",
             type = "shapeless",
             recipe = {
-                {"mobs_mc:zombie", "mcl_mobitems:rotten_flesh"}
+                {"mobs_mc:zombie", "mcl_mobitems:sand"}
             }
         })
     end
