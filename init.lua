@@ -3,7 +3,7 @@ local DEBRIS = "mcl_nether:ancient_debris"
 local NETHERITE_INGOT = "mcl_nether:netherite_ingot"
 local NETHERITE_BLOCK = "mcl_nether:netheriteblock"
 
-if minetest.settings:get("spawncraft_zombie") then
+if minetest.settings:get_bool("spawncraft_zombie") then
     minetest.register_craft({
         output = "mobs_mc:zombie",
         recipe = {
@@ -14,7 +14,7 @@ if minetest.settings:get("spawncraft_zombie") then
     })
 end
 
-if minetest.settings:get("spawncraft_husk") then
+if minetest.settings:get_bool("spawncraft_husk") then
     minetest.register_craft({
         output = "mobs_mc:{mob}",
         recipe = {
@@ -25,7 +25,7 @@ if minetest.settings:get("spawncraft_husk") then
     })
 end
 
-if minetest.settings:get("spawncraft_skeleton") then
+if minetest.settings:get_bool("spawncraft_skeleton") then
     minetest.register_craft({
         output = "mobs_mc:{mob}",
         recipe = {
@@ -36,7 +36,7 @@ if minetest.settings:get("spawncraft_skeleton") then
     })
 end
 
-if minetest.settings:get("spawncraft_stray") then
+if minetest.settings:get_bool("spawncraft_stray") then
     minetest.register_craft({
         output = "mobs_mc:{mob}",
         recipe = {
