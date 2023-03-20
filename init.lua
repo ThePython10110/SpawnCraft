@@ -21,7 +21,9 @@ minetest.register_craft({
     }
 })
 
-if minetest.settings:get_bool("spawncraft_skeleton") then
+local spawncraft_skeleton = minetest.settings:get_bool("spawncraft_skeleton") ~= false
+
+if spawncraft_skeleton then
     minetest.register_craft({
         output = "mobs_mc:skeleton",
         recipe = {
