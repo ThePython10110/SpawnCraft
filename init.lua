@@ -16,9 +16,7 @@ if minetest.settings:get_bool("spawncraft_zombie", true) then
         minetest.register_craft({
             output = "mobs_mc:zombie",
             type = "shapeless",
-            recipe = {
-                {"mobs_mc:husk", "mcl_mobitems:rotten_flesh"}
-            }
+            recipe = {"mobs_mc:husk", "mcl_mobitems:rotten_flesh"}
         })
     end
 end
@@ -36,9 +34,7 @@ if minetest.settings:get_bool("spawncraft_husk", true) then
         minetest.register_craft({
             output = "mobs_mc:husk",
             type = "shapeless",
-            recipe = {
-                {"mobs_mc:zombie", "mcl_mobitems:sand"}
-            }
+            recipe = {"mobs_mc:zombie", "mcl_mobitems:sand"}
         })
     end
 end
@@ -57,9 +53,7 @@ if minetest.settings:get_bool("spawncraft_skeleton", true) then
         minetest.register_craft({
             output = "mobs_mc:skeleton",
             type = "shapeless",
-            recipe = {
-                {"mobs_mc:stray", "mcl_mobitems:bone"}
-            }
+            recipe = {"mobs_mc:stray", "mcl_mobitems:bone"}
         })
     end
 end
@@ -77,9 +71,7 @@ if minetest.settings:get_bool("spawncraft_stray", true) then
         minetest.register_craft({
             output = "mobs_mc:stray",
             type = "shapeless",
-            recipe = {
-                {"mobs_mc:skeleton", "mcl_core:ice"}
-            }
+            recipe = {"mobs_mc:skeleton", "mcl_core:ice"}
         })
     end
 end
@@ -97,9 +89,7 @@ if minetest.settings:get_bool("spawncraft_villager", true) then
         minetest.register_craft({
             output = "mobs_mc:zombie_villager",
             type = "shapeless",
-            recipe = {
-                {"mobs_mc:villager", "mobs_mc:zombie"}
-            }
+            recipe = {"mobs_mc:villager", "mobs_mc:zombie"}
         })
     end
 end
