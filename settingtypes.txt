@@ -1,0 +1,192 @@
+#   Allows crafting spawners
+spawncraft_spawner (Allow spawner recipe) bool true
+
+#	Allows crafting zombie eggs
+spawncraft_zombie (Allow zombie egg recipe) bool true
+
+#	Allows crafting husk eggs
+spawncraft_husk (Allow husk egg recipe) bool true
+
+#	Allows crafting skeleton eggs
+spawncraft_skeleton (Allow skeleton egg recipe) bool true
+
+#	Allows crafting stray eggs
+spawncraft_stray (Allow stray egg recipe) bool true
+
+#	Allows crafting wolf eggs
+spawncraft_wolf (Allow wolf egg recipe) bool true
+
+#	Allows crafting spider eggs
+spawncraft_spider (Allow spider egg recipe) bool true
+
+#	Allows crafting cave spider eggs
+spawncraft_cave_spider (Allow cave spider egg recipe) bool true
+
+#	Allows crafting bat eggs
+spawncraft_bat (Allow bat egg recipe) bool true
+
+#	Allows crafting cat eggs
+spawncraft_cat (Allow cat egg recipe) bool true
+
+#	Allows crafting chicken eggs
+spawncraft_chicken (Allow chicken egg recipe) bool true
+
+#	Allows crafting cod eggs
+spawncraft_cod (Allow cod egg recipe) bool true
+
+#	Allows crafting cow eggs
+spawncraft_cow (Allow cow egg recipe) bool true
+
+#	Allows crafting glow squid eggs
+spawncraft_glow_squid (Allow glow squid egg recipe) bool true
+
+#	Allows crafting squid eggs
+spawncraft_squid (Allow squid egg recipe) bool true
+
+#	Allows crafting horse eggs
+spawncraft_horse (Allow horse egg recipe) bool true
+
+#	Allows crafting parrot eggs
+spawncraft_parrot (Allow parrot egg recipe) bool true
+
+#	Allows crafting pig eggs
+spawncraft_pig (Allow pig egg recipe) bool true
+
+#	Allows crafting rabbit eggs
+spawncraft_rabbit (Allow rabbit egg recipe) bool true
+
+#	Allows crafting salmon eggs
+spawncraft_salmon (Allow salmon egg recipe) bool true
+
+#	Allows crafting sheep eggs
+spawncraft_sheep (Allow sheep egg recipe) bool true
+
+#	Allows crafting snow golen eggs
+spawncraft_snow_golen (Allow snow golen egg recipe) bool true
+
+#	Allows crafting squid eggs
+spawncraft_squid (Allow squid egg recipe) bool true
+
+#	Allows crafting strider eggs
+spawncraft_strider (Allow strider egg recipe) bool true
+
+#	Allows crafting villager eggs
+spawncraft_villager (Allow villager egg recipe) bool true
+
+#	Allows crafting bee eggs
+spawncraft_bee (Allow bee egg recipe) bool true
+
+#	Allows crafting enderman eggs
+spawncraft_enderman (Allow enderman egg recipe) bool true
+
+#	Allows crafting iron golem eggs
+spawncraft_iron_golem (Allow iron golem egg recipe) bool true
+
+#	Allows crafting llama eggs
+spawncraft_llama (Allow llama egg recipe) bool true
+
+#	Allows crafting polar bear eggs
+spawncraft_polar_bear (Allow polar bear egg recipe) bool true
+
+#	Allows crafting blaze eggs
+spawncraft_blaze (Allow blaze egg recipe) bool true
+
+#	Allows crafting creeper eggs
+spawncraft_creeper (Allow creeper egg recipe) bool true
+
+#	Allows crafting guardian eggs
+spawncraft_guardian (Allow guardian egg recipe) bool true
+
+#	Allows crafting ghast eggs
+spawncraft_ghast (Allow ghast egg recipe) bool true
+
+#	Allows crafting magma cube eggs
+spawncraft_magma_cube (Allow magma cube egg recipe) bool true
+
+#	Allows crafting pillager eggs
+spawncraft_pillager (Allow pillager egg recipe) bool true
+
+#	Allows crafting vindicator eggs
+spawncraft_vindicator (Allow vindicator egg recipe) bool true
+
+#	Allows crafting ravager eggs
+spawncraft_ravager (Allow ravager egg recipe) bool true
+
+#	Allows crafting shulker eggs
+spawncraft_shulker (Allow shulker egg recipe) bool true
+
+#	Allows crafting silverfish eggs
+spawncraft_silverfish (Allow silverfish egg recipe) bool true
+
+#	Allows crafting slime eggs
+spawncraft_slime (Allow slime egg recipe) bool true
+
+#	Allows crafting vex eggs
+spawncraft_vex (Allow vex egg recipe) bool true
+
+#	Allows crafting wither skeleton eggs
+spawncraft_wither_skeleton (Allow wither skeleton egg recipe) bool true
+
+#	Allows crafting ender dragon eggs
+spawncraft_ender_dragon (Allow ender dragon egg recipe) bool true
+
+#	Allows crafting wither eggs
+spawncraft_wither (Allow wither egg recipe) bool true
+
+#	Allows crafting witch eggs
+spawncraft_witch (Allow witch egg recipe) bool true
+
+#	Allows crafting dolphin eggs
+spawncraft_dolphin (Allow dolphin egg recipe) bool true
+
+#	Allows crafting hoglin eggs
+spawncraft_hoglin (Allow hoglin egg recipe) bool true
+
+#	Allows crafting piglin eggs
+spawncraft_piglin (Allow piglin egg recipe) bool true
+
+#	Allows crafting zombie villager eggs
+spawncraft_zombie_villager (Allow zombie villager egg recipe) bool true
+
+#	Allows crafting zombie pigman eggs
+spawncraft_zombie_pigman (Allow zombie pigman egg recipe) bool true
+
+#	Allows crafting evoker eggs
+spawncraft_evoker (Allow evoker egg recipe) bool true
+
+#	Allows crafting elder guardian eggs
+spawncraft_elder_guardian (Allow elder guardian egg recipe) bool true
+
+#	Allows crafting killer bunny eggs
+spawncraft_killer_bunny (Allow killer bunny egg recipe) bool true
+
+#	Allows crafting evoker eggs
+spawncraft_evoker (Allow evoker egg recipe) bool true
+
+#	Allows crafting illusioner eggs
+spawncraft_illusioner (Allow illusioner egg recipe) bool true
+
+#	Allows crafting piglin brute eggs
+spawncraft_piglin_brute (Allow piglin brute egg recipe) bool true
+
+#	Allows crafting tropical fish eggs
+spawncraft_tropical_fish (Allow tropical fish egg recipe) bool true
+
+#	Allows crafting zombie horse eggs
+spawncraft_zombie_horse (Allow zombie horse egg recipe) bool true
+
+#	Allows crafting skeleton horse eggs
+spawncraft_skeleton_horse (Allow skeleton horse egg recipe) bool true
+
+#	Allows crafting ocelot eggs
+spawncraft_ocelot (Allow ocelot egg recipe) bool true
+
+#	Allows crafting donkey eggs
+spawncraft_donkey (Allow donkey egg recipe) bool true
+
+#	Allows crafting mule eggs
+spawncraft_mule (Allow mule egg recipe) bool true
+
+#	Allows crafting endermite eggs
+spawncraft_endermite (Allow endermite egg recipe) bool true
+
