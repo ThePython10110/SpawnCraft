@@ -3,18 +3,18 @@ local DEBRIS = "mcl_nether:ancient_debris"
 local NETHERITE_INGOT = "mcl_nether:netherite_ingot"
 local NETHERITE_BLOCK = "mcl_nether:netheriteblock"
 
-if minetest.settings:get_bool("spawncraft_zombie") then
-    minetest.register_craft({
-        output = "mobs_mc:zombie",
-        recipe = {
-            {EGG, "mcl_mobitems:rotten_flesh", EGG},
-            {"mcl_mobitems:rotten_flesh", DEBRIS, "mcl_mobitems:rotten_flesh"},
-            {EGG, "mcl_mobitems:rotten_flesh", EGG}
-        }
-    })
-end
+/*if minetest.settings:get_bool("spawncraft_zombie") == true then*/
+minetest.register_craft({
+    output = "mobs_mc:zombie",
+    recipe = {
+        {EGG, "mcl_mobitems:rotten_flesh", EGG},
+        {"mcl_mobitems:rotten_flesh", DEBRIS, "mcl_mobitems:rotten_flesh"},
+        {EGG, "mcl_mobitems:rotten_flesh", EGG}
+    }
+})
+/*end*/
 
-if minetest.settings:get_bool("spawncraft_husk") then
+if minetest.settings:get_bool("spawncraft_husk") == true then
     minetest.register_craft({
         output = "mobs_mc:{mob}",
         recipe = {
