@@ -12,16 +12,14 @@ minetest.register_craft({
     }
 })
 
-if minetest.settings:get_bool("spawncraft_husk") == true then
-    minetest.register_craft({
-        output = "mobs_mc:husk",
-        recipe = {
-            {EGG, "mcl_mobitems:rotten_flesh", EGG},
-            {"group:sand", DEBRIS, "group:sand"},
-            {EGG, "mcl_mobitems:rotten_flesh", EGG}
-        }
-    })
-end
+minetest.register_craft({
+    output = "mobs_mc:husk",
+    recipe = {
+        {EGG, "mcl_mobitems:rotten_flesh", EGG},
+        {"group:sand", DEBRIS, "group:sand"},
+        {EGG, "mcl_mobitems:rotten_flesh", EGG}
+    }
+})
 
 if minetest.settings:get_bool("spawncraft_skeleton") then
     minetest.register_craft({
