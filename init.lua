@@ -34,7 +34,7 @@ if spawncraft_skeleton then
     })
 end
 
-if minetest.settings:get_bool("spawncraft_stray") then
+if minetest.setting_getbool("spawncraft_stray") then
     minetest.register_craft({
         output = "mobs_mc:stray",
         recipe = {
