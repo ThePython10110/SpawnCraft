@@ -204,7 +204,7 @@ if minetest.settings:get_bool("spawncraft_wither", true) then
     })
 end
 
-minetest.log(minetest.settings:get_bool("spawncraft_ender_dragon", true))
+minetest.log(tostring(minetest.settings:get_bool("spawncraft_ender_dragon", true)))
 
 if minetest.settings:get_bool("spawncraft_ender_dragon", true) then
     minetest.register_craft({
