@@ -213,5 +213,6 @@ if minetest.settings:get_bool("spawncraft_ender_dragon", true) then
             {EGG, "mcl_end:crystal", EGG}
         }
     })
+else
+    print(minetest.settings:get_bool("spawncraft_ender_dragon", true))
 end
-
