@@ -44,16 +44,16 @@ if minetest.settings:get_bool("spawncraft_skeleton", true) then
     minetest.register_craft({
         output = "mobs_mc:skeleton",
         recipe = {
-            {EGG, "mcl_mobitems:bone", EGG},
-            {"mcl_mobitems:bone", DEBRIS, "mcl_mobitems:bone"},
-            {EGG, "mcl_mobitems:bone", EGG}
+            {EGG, "mcl_bows:arrow", EGG},
+            {"mcl_bows:arrow", DEBRIS, "mcl_bows:arrow"},
+            {EGG, "mcl_bows:arrow", EGG}
         }
     })
     if minetest.settings:get_bool("spawncraft_stray", true) then
         minetest.register_craft({
             output = "mobs_mc:skeleton",
             type = "shapeless",
-            recipe = {"mobs_mc:stray", "mcl_mobitems:bone"}
+            recipe = {"mobs_mc:stray", "mcl_bows:arrow"}
         })
     end
 end
@@ -62,9 +62,9 @@ if minetest.settings:get_bool("spawncraft_stray", true) then
     minetest.register_craft({
         output = "mobs_mc:stray",
         recipe = {
-            {EGG, "mcl_mobitems:bone", EGG},
+            {EGG, "mcl_bows:arrow", EGG},
             {"mcl_core:ice", DEBRIS, "mcl_core:ice"},
-            {EGG, "mcl_mobitems:bone", EGG}
+            {EGG, "mcl_bows:arrow", EGG}
         }
     })
     if minetest.settings:get_bool("spawncraft_skeleton", true) then
@@ -93,3 +93,125 @@ if minetest.settings:get_bool("spawncraft_villager", true) then
         })
     end
 end
+
+if minetest.settings:get_bool("spawncraft_spider", true) then
+    minetest.register_craft({
+        output = "mobs_mc:spider",
+        recipe = {
+            {EGG, "mcl_mobitems:string", EGG},
+            {"mcl_mobitems:string", DEBRIS, "mcl_mobitems:string"},
+            {EGG, "mcl_mobitems:string", EGG}
+        }
+    })
+end
+
+if minetest.settings:get_bool("spawncraft_cave_spider", true) then
+    minetest.register_craft({
+        output = "mobs_mc:cave_spider",
+        recipe = {
+            {EGG, "mcl_mobitems:string", EGG},
+            {"mcl_mobitems:spider_eyes", DEBRIS, "mcl_mobitems:spider_eyes"},
+            {EGG, "mcl_mobitems:string", EGG}
+        }
+    })
+end
+
+if minetest.settings:get_bool("spawncraft_wolf", true) then
+    minetest.register_craft({
+        output = "mobs_mc:wolf",
+        recipe = {
+            {EGG, "mcl_mobitems:bone", EGG},
+            {"mcl_mobitems:bone", DEBRIS, "mcl_mobitems:bone"},
+            {EGG, "mcl_mobitems:bone", EGG}
+        }
+    })
+end
+
+if minetest.settings:get_bool("spawncraft_chicken", true) then
+    minetest.register_craft({
+        output = "mobs_mc:chicken",
+        recipe = {
+            {EGG, EGG, EGG},
+            {EGG, DEBRIS, EGG},
+            {EGG, EGG, EGG}
+        }
+    })
+end
+
+if minetest.settings:get_bool("spawncraft_enderman", true) then
+    minetest.register_craft({
+    output = "mobs_mc:enderman",
+        recipe = {
+            {EGG, "mcl_throwing:ender_pearl", EGG},
+            {"mcl_throwing:ender_pearl", DEBRIS, "mcl_throwing:ender_pearl"},
+            {EGG, "mcl_throwing:ender_pearl", EGG}
+        }
+    })
+end
+
+if minetest.settings:get_bool("spawncraft_blaze", true) then
+    minetest.register_craft({
+        output = "mobs_mc:blaze",
+        recipe = {
+            {EGG, "mcl_mobitems:blaze_rod", EGG},
+            {"mcl_mobitems:blaze_rod", DEBRIS, "mcl_mobitems:blaze_rod"},
+            {EGG, "mcl_mobitems:blaze_rod", EGG}
+        }
+    })
+end
+
+if minetest.settings:get_bool("spawncraft_slime", true) then
+    minetest.register_craft({
+        output = "mobs_mc:slime",
+        recipe = {
+            {EGG, "mcl_core:slimeblock", EGG},
+            {"mcl_core:slimeblock", DEBRIS, "mcl_core:slimeblock"},
+            {EGG, "mcl_core:slimeblock", EGG}
+        }
+    })
+end
+
+if minetest.settings:get_bool("spawncraft_creeper", true) then
+    minetest.register_craft({
+        output = "mobs_mc:creeper",
+        recipe = {
+            {EGG, "mcl_mobitems:gunpowder", EGG},
+            {"mcl_mobitems:gunpowder", DEBRIS, "mcl_mobitems:gunpowder"},
+            {EGG, "mcl_mobitems:gunpowder", EGG}
+        }
+    })
+end
+
+if minetest.settings:get_bool("spawncraft_wither_skeleton", true) then
+    minetest.register_craft({
+        output = "mobs_mc:wither_skeleton",
+        recipe = {
+            {EGG, "mcl_heads:wither_skeleton", EGG},
+            {"mcl_mobitems:bone", DEBRIS, "mcl_mobitems:bone"},
+            {EGG, "mcl_heads:wither_skeleton", EGG}
+        }
+    })
+end
+
+if minetest.settings:get_bool("spawncraft_wither", true) then
+    minetest.register_craft({
+        output = "mobs_mc:wither",
+        recipe = {
+            {EGG, "mcl_nether:soul_sand", EGG},
+            {"mcl_heads:wither_skeleton", mcl_armor:elytra, "mcl_heads:wither_skeleton"},
+            {EGG, "mcl_nether:soul_sand", EGG}
+        }
+    })
+end
+
+if minetest.settings:get_bool("spawncraft_ender_dragon", true) then
+    minetest.register_craft({
+        output = "mobs_mc:ender_dragon",
+        recipe = {
+            {EGG, "mcl_end:crystal", EGG},
+            {"mcl_end:crystal", mcl_armor:elytra, "mcl_end:crystal"},
+            {EGG, "mcl_end:crystal", EGG}
+        }
+    })
+end
+
