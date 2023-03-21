@@ -1,7 +1,16 @@
 local EGG = "mcl_throwing:egg"
 local DEBRIS = "mcl_nether:ancient_debris"
-local NETHERITE_INGOT = "mcl_nether:netherite_ingot"
-local NETHERITE_BLOCK = "mcl_nether:netheriteblock"
+
+if minetest.settings:get_bool("spawncraft_spawner", true) then
+    minetest.register_craft({
+        output = "mcl_mobspawners:spawner",
+        recipe = {
+            {"xpanes:bar_flat", "xpanes:bar_flat", "xpanes:bar_flat"},
+            {"xpanes:bar_flat", "mcl_nether:netheriteblock", "xpanes:bar_flat"},
+            {"xpanes:bar_flat", "xpanes:bar_flat", "xpanes:bar_flat"}
+        }
+    })
+end
 
 if minetest.settings:get_bool("spawncraft_zombie", true) then
     minetest.register_craft({
@@ -206,6 +215,16 @@ end
 
 --minetest.log(tostring(minetest.settings:get_bool("spawncraft_ender_dragon", true)))
 
+if minetest.settings:get_bool("spawncraft_ender_dragon", true) then
+    minetest.register_craft({
+        output = "mobs_mc:enderdragon",
+        recipe = {
+            {EGG, "mcl_end_crystal:end_crystal", EGG},
+            {"mcl_end_crystal:end_crystal", "mcl_armor:elytra", "mcl_end_crystal:end_crystal"},
+            {EGG, "mcl_end_crystal:end_crystal", EGG}
+        }
+    })
+end
 
 if minetest.settings:get_bool("spawncraft_ender_dragon", true) then
     minetest.register_craft({
@@ -217,3 +236,4 @@ if minetest.settings:get_bool("spawncraft_ender_dragon", true) then
         }
     })
 end
+
