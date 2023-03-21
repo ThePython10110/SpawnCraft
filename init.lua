@@ -110,7 +110,7 @@ if minetest.settings:get_bool("spawncraft_cave_spider", true) then
         output = "mobs_mc:cave_spider",
         recipe = {
             {EGG, "mcl_mobitems:string", EGG},
-            {"mcl_mobitems:spider_eyes", DEBRIS, "mcl_mobitems:spider_eyes"},
+            {"mcl_mobitems:spider_eye", DEBRIS, "mcl_mobitems:spider_eye"},
             {EGG, "mcl_mobitems:string", EGG}
         }
     })
@@ -204,11 +204,11 @@ if minetest.settings:get_bool("spawncraft_wither", true) then
     })
 end
 
-minetest.log(tostring(minetest.settings:get_bool("spawncraft_ender_dragon", true)))
+--minetest.log(tostring(minetest.settings:get_bool("spawncraft_ender_dragon", true)))
 
 if minetest.settings:get_bool("spawncraft_ender_dragon", true) then
     minetest.register_craft({
-        output = "mobs_mc:ender_dragon",
+        output = "mobs_mc:enderdragon",
         recipe = {
             {EGG, "mcl_end_crystal:end_crystal", EGG},
             {"mcl_end_crystal:end_crystal", "mcl_armor:elytra", "mcl_end_crystal:end_crystal"},
