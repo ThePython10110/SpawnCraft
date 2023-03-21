@@ -9,14 +9,18 @@ I think the recipes are reasonably fair (all of them require Ancient Debris or N
 8 iron bars around 1 Netherite block
 ### Spawn eggs:
 **Zombie**
-|Egg|Rotten Flesh|Egg|
+```
+|Egg         |Rotten Flesh  |Egg         |
 |Rotten Flesh|Ancient Debris|Rotten Flesh|
-|Egg|Rotten Flesh|Egg|
+|Egg         |Rotten Flesh  |Egg         |
+```
 *or combine a husk egg with rotten flesh (assuming husk eggs are craftable)*
 
 **Husk**
-|Egg|Rotten Flesh|Egg|
+```
+|Egg |Rotten Flesh  |Egg |
 |Sand|Ancient Debris|Sand|
-|Egg|Rotten Flesh|Egg|
+|Egg |Rotten Flesh  |Egg |
+```
 *or combine a zombie egg with sand (assuming zombie eggs are craftable)*
 
