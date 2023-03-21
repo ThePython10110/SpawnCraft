@@ -188,7 +188,7 @@ if minetest.settings:get_bool("spawncraft_wither_skeleton", true) then
         recipe = {
             {EGG, "mcl_heads:wither_skeleton", EGG},
             {"mcl_mobitems:bone", DEBRIS, "mcl_mobitems:bone"},
-            {EGG, "mcl_heads:wither_skeleton", EGG}
+            {EGG, "mcl_mobitems:bone", EGG}
         }
     })
 end
@@ -197,8 +197,8 @@ if minetest.settings:get_bool("spawncraft_wither", true) then
     minetest.register_craft({
         output = "mobs_mc:wither",
         recipe = {
-            {EGG, "mcl_nether:soul_sand", EGG},
-            {"mcl_heads:wither_skeleton", mcl_armor:elytra, "mcl_heads:wither_skeleton"},
+            {"mcl_heads:wither_skeleton", "mcl_heads:wither_skeleton", "mcl_heads:wither_skeleton"},
+            {"mcl_nether:soul_sand", "mcl_armor:elytra", "mcl_nether:soul_sand"},
             {EGG, "mcl_nether:soul_sand", EGG}
         }
     })
@@ -209,7 +209,7 @@ if minetest.settings:get_bool("spawncraft_ender_dragon", true) then
         output = "mobs_mc:ender_dragon",
         recipe = {
             {EGG, "mcl_end:crystal", EGG},
-            {"mcl_end:crystal", mcl_armor:elytra, "mcl_end:crystal"},
+            {"mcl_end:crystal", "mcl_armor:elytra", "mcl_end:crystal"},
             {EGG, "mcl_end:crystal", EGG}
         }
     })
