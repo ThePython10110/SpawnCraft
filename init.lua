@@ -198,13 +198,14 @@ if minetest.settings:get_bool("spawncraft_wither", true) then
         output = "mobs_mc:wither",
         recipe = {
             {"mcl_heads:wither_skeleton", "mcl_heads:wither_skeleton", "mcl_heads:wither_skeleton"},
-            {"mcl_nether:soul_sand", "mcl_armor:elytra", "mcl_nether:soul_sand"},
+            {"mcl_nether:soul_sand", "mcl_mobitems:nether_star", "mcl_nether:soul_sand"},
             {EGG, "mcl_nether:soul_sand", EGG}
         }
     })
 end
 
 --minetest.log(tostring(minetest.settings:get_bool("spawncraft_ender_dragon", true)))
+
 
 if minetest.settings:get_bool("spawncraft_ender_dragon", true) then
     minetest.register_craft({
