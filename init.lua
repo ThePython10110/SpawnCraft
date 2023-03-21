@@ -204,15 +204,15 @@ if minetest.settings:get_bool("spawncraft_wither", true) then
     })
 end
 
-print(minetest.settings:get_bool("spawncraft_ender_dragon", true))
+minetest.log(minetest.settings:get_bool("spawncraft_ender_dragon", true))
 
 if minetest.settings:get_bool("spawncraft_ender_dragon", true) then
     minetest.register_craft({
         output = "mobs_mc:ender_dragon",
         recipe = {
-            {EGG, "mcl_end:crystal", EGG},
-            {"mcl_end:crystal", "mcl_armor:elytra", "mcl_end:crystal"},
-            {EGG, "mcl_end:crystal", EGG}
+            {EGG, "mcl_end_crystal:end_crystal", EGG},
+            {"mcl_end_crystal:end_crystal", "mcl_armor:elytra", "mcl_end_crystal:end_crystal"},
+            {EGG, "mcl_end_crystal:end_crystal", EGG}
         }
     })
 end
