@@ -528,19 +528,17 @@ end
 
 if minetest.settings:get_bool("spawncraft_axlotl", true) then
     minetest.register_craft({
-        minetest.register_craft({
-            output = "mobs_mc:axlotl",
-            recipe = {
-                {EGG, "mcl_buckets:bucket_axlotl", EGG},
-                {"mcl_buckets:bucket_axlotl", DEBRIS, "mcl_buckets:bucket_axlotl"},
-                {EGG, "mcl_buckets:bucket_axlotl", EGG}
-            },
-            replacements = {
-                {"mcl_buckets:bucket_axlotl", "mcl_buckets:bucket_empty"},
-                {"mcl_buckets:bucket_axlotl", "mcl_buckets:bucket_empty"},
-                {"mcl_buckets:bucket_axlotl", "mcl_buckets:bucket_empty"}
-            }
-        })
+        output = "mobs_mc:axlotl",
+        recipe = {
+            {EGG, "mcl_buckets:bucket_axlotl", EGG},
+            {"mcl_buckets:bucket_axlotl", DEBRIS, "mcl_buckets:bucket_axlotl"},
+            {EGG, "mcl_buckets:bucket_axlotl", EGG}
+        },
+        replacements = {
+            {"mcl_buckets:bucket_axlotl", "mcl_buckets:bucket_empty"},
+            {"mcl_buckets:bucket_axlotl", "mcl_buckets:bucket_empty"},
+            {"mcl_buckets:bucket_axlotl", "mcl_buckets:bucket_empty"}
+        }
     })
 end
 
