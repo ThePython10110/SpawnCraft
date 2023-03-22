@@ -526,19 +526,19 @@ if minetest.settings:get_bool("spawncraft_tropical_fish", true) then
     end
 end
 
-if minetest.settings:get_bool("spawncraft_axlotl", true) then
+if minetest.settings:get_bool("spawncraft_axolotl", true) then
     minetest.register_craft({
-        output = "mobs_mc:axlotl",
+        output = "mobs_mc:axolotl",
         recipe = {
-            {EGG, "mcl_buckets:bucket_axlotl", EGG},
-            {"mcl_buckets:bucket_axlotl", DEBRIS, "mcl_buckets:bucket_axlotl"},
-            {EGG, "mcl_buckets:bucket_axlotl", EGG}
+            {EGG, "mcl_buckets:bucket_axolotl", EGG},
+            {"mcl_buckets:bucket_axolotl", DEBRIS, "mcl_buckets:bucket_axolotl"},
+            {EGG, "mcl_buckets:bucket_axolotl", EGG}
         },
         replacements = {
-            {"mcl_buckets:bucket_axlotl", "mcl_buckets:bucket_empty"},
-            {"mcl_buckets:bucket_axlotl", "mcl_buckets:bucket_empty"},
-            {"mcl_buckets:bucket_axlotl", "mcl_buckets:bucket_empty"},
-            {"mcl_buckets:bucket_axlotl", "mcl_buckets:bucket_empty"}
+            {"mcl_buckets:bucket_axolotl", "mcl_buckets:bucket_empty"},
+            {"mcl_buckets:bucket_axolotl", "mcl_buckets:bucket_empty"},
+            {"mcl_buckets:bucket_axolotl", "mcl_buckets:bucket_empty"},
+            {"mcl_buckets:bucket_axolotl", "mcl_buckets:bucket_empty"}
         }
     })
 end

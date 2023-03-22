@@ -190,5 +190,5 @@ spawncraft_mule (Allow mule egg recipe) bool true
 #	Allows crafting endermite eggs
 spawncraft_endermite (Allow endermite egg recipe) bool true
 
-#   Allows crafting axlotl eggs
-spawncraft_axlotl (Allow axlotl egg recipe) bool true
+#   Allows crafting axolotl eggs
+spawncraft_axolotl (Allow axolotl egg recipe) bool true
