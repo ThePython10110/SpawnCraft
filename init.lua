@@ -85,7 +85,7 @@ if minetest.settings:get_bool("spawncraft_zombie_villager", true) then
             type = "shapeless",
             recipe = {"mobs_mc:zombie", "group:emerald"}
         })
-        if minetest.settings.get_bool("spawncraft_villager", true) then
+        if minetest.settings:get_bool("spawncraft_villager", true) then
             minetest.register_craft({
                 output = "mobs_mc:zombie_villager 2",
                 type = "shapeless",
@@ -155,7 +155,7 @@ if minetest.settings:get_bool("spawncraft_wither_skeleton", true) then
             {EGG, "mcl_mobitems:bone", EGG}
         }
     })
-    if minetest.settings.get_bool("spawncraft_skeleton", true) then
+    if minetest.settings:get_bool("spawncraft_skeleton", true) then
         minetest.register_craft({
             output = "mobs_mc:wither_skeleton",
             type = "shapeless",
@@ -301,7 +301,7 @@ if minetest.settings:get_bool("spawncraft_ender_dragon", true) then
     })
 end
 
-if minetest.settings.get_bool("spawncraft_horse", true) then
+if minetest.settings:get_bool("spawncraft_horse", true) then
     minetest.register_craft({
         output = "mobs_mc:horse",
         recipe = {
@@ -310,7 +310,7 @@ if minetest.settings.get_bool("spawncraft_horse", true) then
             {EGG, "mcl_mobitems:saddle", EGG}
         }
     })
-    if minetest.settings.get_bool("spawncraft_mule", true) then
+    if minetest.settings:get_bool("spawncraft_mule", true) then
         minetest.register_craft({
             output = "mobs_mc:horse",
             type = "shapeless",
@@ -319,7 +319,7 @@ if minetest.settings.get_bool("spawncraft_horse", true) then
     end
 end
 
-if minetest.settings.get_bool("spawncraft_donkey", true) then
+if minetest.settings:get_bool("spawncraft_donkey", true) then
     minetest.register_craft({
         output = "mobs_mc:donkey",
         recipe = {
@@ -328,7 +328,7 @@ if minetest.settings.get_bool("spawncraft_donkey", true) then
             {EGG, "mcl_mobitems:saddle", EGG}
         }
     })
-    if minetest.settings.get_bool("spawncraft_horse", true) then
+    if minetest.settings:get_bool("spawncraft_horse", true) then
         minetest.register_craft({
             output = "mobs_mc:donkey",
             type = "shapeless",
@@ -337,7 +337,7 @@ if minetest.settings.get_bool("spawncraft_donkey", true) then
     end
 end
 
-if minetest.settings.get_bool("spawncraft_mule", true) then
+if minetest.settings:get_bool("spawncraft_mule", true) then
     minetest.register_craft({
         output = "mobs_mc:mule",
         recipe = {
@@ -346,13 +346,13 @@ if minetest.settings.get_bool("spawncraft_mule", true) then
             {EGG, "mcl_chests:chest", EGG}
         }
     })
-    if minetest.settings.get_bool("spawncraft_donkey", true) then
+    if minetest.settings:get_bool("spawncraft_donkey", true) then
         minetest.register_craft({
             output = "mobs_mc:mule",
             type = "shapeless",
             recipe = {"mobs_mc:donkey"}
         })
-        if minetest.settings.get_bool("spawncraft_horse", true) then
+        if minetest.settings:get_bool("spawncraft_horse", true) then
             minetest.register_craft({
                 output = "mobs_mc:mule 2",
                 type = "shapeless",
@@ -362,7 +362,7 @@ if minetest.settings.get_bool("spawncraft_mule", true) then
     end
 end
 
-if minetest.settings.get_bool("spawncraft_bat", true) then
+if minetest.settings:get_bool("spawncraft_bat", true) then
     minetest.register_craft({
         output = "mobs_mc:bat",
         recipe = {
@@ -373,7 +373,7 @@ if minetest.settings.get_bool("spawncraft_bat", true) then
     })
 end
 
-if minetest.settings.get_bool("spawncraft_cat", true) then
+if minetest.settings:get_bool("spawncraft_cat", true) then
     minetest.register_craft({
         output = "mobs_mc:cat",
         recipe = {
@@ -390,7 +390,7 @@ if minetest.settings.get_bool("spawncraft_cat", true) then
             {EGG, "mcl_mobitems:milk", EGG}
         }
     })
-    if minetest.settings.get_bool("spawncraft_ocelot", true) then
+    if minetest.settings:get_bool("spawncraft_ocelot", true) then
         minetest.register_craft({
             output = "mobs_mc:cat",
             type = "shapeless",
@@ -399,7 +399,7 @@ if minetest.settings.get_bool("spawncraft_cat", true) then
     end
 end
 
-if minetest.settings.get_bool("spawncraft_ocelot", true) then
+if minetest.settings:get_bool("spawncraft_ocelot", true) then
     minetest.register_craft({
         output = "mobs_mc:ocelot",
         recipe = {
@@ -416,7 +416,7 @@ if minetest.settings.get_bool("spawncraft_ocelot", true) then
             {EGG, "mcl_fishing:salmon_raw", EGG}
         }
     })
-    if minetest.settings.get_bool("spawncraft_cat", true) then
+    if minetest.settings:get_bool("spawncraft_cat", true) then
         minetest.register_craft({
             output = "mobs_mc:ocelot",
             type = "shapeless",
@@ -425,7 +425,7 @@ if minetest.settings.get_bool("spawncraft_ocelot", true) then
     end
 end
 
-if minetest.settings.get_bool("spawncraft_cod", true) then
+if minetest.settings:get_bool("spawncraft_cod", true) then
     minetest.register_craft({
         output = "mobs_mc:cod",
         recipe = {
@@ -455,7 +455,7 @@ if minetest.settings.get_bool("spawncraft_cod", true) then
             {"mcl_buckets:bucket_cod", "mcl_buckets:bucket_empty"}
         }
     })
-    if minetest.settings.get_bool("spawncraft_tropical_fish", true) then
+    if minetest.settings:get_bool("spawncraft_tropical_fish", true) then
         minetest.register_craft({
             output = "mobs_mc:cod",
             type = "shapeless",
@@ -464,7 +464,7 @@ if minetest.settings.get_bool("spawncraft_cod", true) then
     end
 end
 
-if minetest.settings.get_bool("spawncraft_salmon", true) then
+if minetest.settings:get_bool("spawncraft_salmon", true) then
     minetest.register_craft({
         output = "mobs_mc:salmon",
         recipe = {
@@ -494,7 +494,7 @@ if minetest.settings.get_bool("spawncraft_salmon", true) then
             {"mcl_buckets:bucket_salmon", "mcl_buckets:bucket_empty"}
         }
     })
-    if minetest.settings.get_bool("spawncraft_cod", true) then
+    if minetest.settings:get_bool("spawncraft_cod", true) then
         minetest.register_craft({
             output = "mobs_mc:salmon",
             type = "shapeless",
@@ -503,7 +503,7 @@ if minetest.settings.get_bool("spawncraft_salmon", true) then
     end
 end
 
-if minetest.settings.get_bool("spawncraft_tropical_fish", true) then
+if minetest.settings:get_bool("spawncraft_tropical_fish", true) then
     minetest.register_craft({
         output = "mobs_mc:tropical_fish",
         recipe = {
@@ -517,7 +517,7 @@ if minetest.settings.get_bool("spawncraft_tropical_fish", true) then
             {"mcl_buckets:bucket_tropical_fish", "mcl_buckets:bucket_empty"}
         }
     })
-    if minetest.settings.get_bool("spawncraft_salmon", true) then
+    if minetest.settings:get_bool("spawncraft_salmon", true) then
         minetest.register_craft({
             output = "mobs_mc:tropical_fish",
             type = "shapeless",
@@ -526,7 +526,7 @@ if minetest.settings.get_bool("spawncraft_tropical_fish", true) then
     end
 end
 
-if minetest.settings.get_bool("spawncraft_axlotl", true) then
+if minetest.settings:get_bool("spawncraft_axlotl", true) then
     minetest.register_craft({
         minetest.register_craft({
             output = "mobs_mc:axlotl",
@@ -544,7 +544,7 @@ if minetest.settings.get_bool("spawncraft_axlotl", true) then
     })
 end
 
-if minetest.settings.get_bool("spawncraft_axlotl", true) then
+if minetest.settings:get_bool("spawncraft_axlotl", true) then
     minetest.register_craft({
         minetest.register_craft({
             output = "mobs_mc:axlotl",
@@ -562,7 +562,7 @@ if minetest.settings.get_bool("spawncraft_axlotl", true) then
     })
 end
 
-if minetest.settings.get_bool("spawncraft_dolphin", true) then
+if minetest.settings:get_bool("spawncraft_dolphin", true) then
     minetest.register_craft({
         output = "mobs_mc:cod",
         recipe = {
@@ -581,7 +581,7 @@ if minetest.settings.get_bool("spawncraft_dolphin", true) then
     })
 end
 
-if minetest.settings.get_bool("spawncraft_rabbit", true) then
+if minetest.settings:get_bool("spawncraft_rabbit", true) then
     minetest.register_craft({
         output = "mobs_mc:rabbit",
         recipe = {
@@ -590,7 +590,7 @@ if minetest.settings.get_bool("spawncraft_rabbit", true) then
             {EGG, "mcl_mobitems:rabbit", EGG}
         }
     })
-    if minetest.settings.get_bool("spawncraft_killer_bunny", true) then
+    if minetest.settings:get_bool("spawncraft_killer_bunny", true) then
         minetest.register_craft({
             output = "mobs_mc:rabbit",
             type = "shapeless",
@@ -601,7 +601,7 @@ if minetest.settings.get_bool("spawncraft_rabbit", true) then
     end
 end
 
-if minetest.settings.get_bool("spawncraft_killer_bunny", true) then
+if minetest.settings:get_bool("spawncraft_killer_bunny", true) then
     minetest.register_craft({
         output = "mobs_mc:killer_bunny",
         recipe = {
@@ -610,7 +610,7 @@ if minetest.settings.get_bool("spawncraft_killer_bunny", true) then
             {EGG, "mcl_mobitems:rabbit", EGG}
         }
     })
-    if minetest.settings.get_bool("spawncraft_rabbit", true) then
+    if minetest.settings:get_bool("spawncraft_rabbit", true) then
         minetest.register_craft({
             output = "mobs_mc:killer_bunny",
             recipe = {
