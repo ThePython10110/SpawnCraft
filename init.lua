@@ -545,7 +545,7 @@ end
 
 if minetest.settings:get_bool("spawncraft_dolphin", true) then
     minetest.register_craft({
-        output = "mobs_mc:cod",
+        output = "mobs_mc:dolphin",
         recipe = {
             {EGG, "mcl_fishing:fish_raw", EGG},
             {"mcl_fishing:salmon_raw", DEBRIS, "mcl_fishing:salmon_raw"},
@@ -553,7 +553,7 @@ if minetest.settings:get_bool("spawncraft_dolphin", true) then
         }
     })
     minetest.register_craft({
-        output = "mobs_mc:cod",
+        output = "mobs_mc:dolphin",
         recipe = {
             {EGG, "mcl_fishing:salmon_raw", EGG},
             {"mcl_fishing:fish_raw", DEBRIS, "mcl_fishing:fish_raw"},
