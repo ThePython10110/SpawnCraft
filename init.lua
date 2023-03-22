@@ -77,15 +77,21 @@ if minetest.settings:get_bool("spawncraft_zombie_villager", true) then
             {EGG, "mcl_mobitems:rotten_flesh", EGG},
             {"mcl_core:emeralds", DEBRIS, "mcl_core:emeralds"},
             {EGG, "mcl_mobitems:rotten_flesh", EGG}
-
         }
     })
-    if minetest.settings.get_bool("spawncraft_villager", true) then
+    if minetest.settings:get_bool("spawncraft_zombie", true) then
         minetest.register_craft({
-            output = "mobs_mc:zombie_villager 2",
+            output = "mobs_mc:zombie_villager",
             type = "shapeless",
-            recipe = {"mobs_mc:villager", "mobs_mc:zombie"}
+            recipe = {"mobs_mc:zombie", "group:emerald"}
         })
+        if minetest.settings.get_bool("spawncraft_villager", true) then
+            minetest.register_craft({
+                output = "mobs_mc:zombie_villager 2",
+                type = "shapeless",
+                recipe = {"mobs_mc:villager", "mobs_mc:zombie"}
+            })
+        end
     end
     if minetest.settings:get_bool("spawncraft_husk", true) then
         minetest.register_craft({
