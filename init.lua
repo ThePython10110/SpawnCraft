@@ -537,6 +537,7 @@ if minetest.settings:get_bool("spawncraft_axlotl", true) then
         replacements = {
             {"mcl_buckets:bucket_axlotl", "mcl_buckets:bucket_empty"},
             {"mcl_buckets:bucket_axlotl", "mcl_buckets:bucket_empty"},
+            {"mcl_buckets:bucket_axlotl", "mcl_buckets:bucket_empty"},
             {"mcl_buckets:bucket_axlotl", "mcl_buckets:bucket_empty"}
         }
     })
