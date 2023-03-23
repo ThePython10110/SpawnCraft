@@ -1,6 +1,6 @@
 --[[
-    I apologize for how long this is... but honestly, there isn't much of a way to make it shorter.
-    I considered making my own function, since most of the recipes were the same,
+    I apologize for how long this is... but honestly, there isn't an easy way to make it shorter.
+    I considered making my own function, since most of the recipes were similar,
     but I realized I would need to pass enough information to it that it wasn't
     really worth it.
 ]]--
@@ -198,6 +198,11 @@ if minetest.settings:get_bool("spawncraft_spider", true) then
             {EGG, "mcl_mobitems:string", EGG}
         }
     })
+    minetest.register_craft({
+        output = "mobs_mc:spider",
+        type = "shapeless",
+        recipe = {"mobs_mc:cave_spider"}
+    })
 end
 
 if minetest.settings:get_bool("spawncraft_cave_spider", true) then
@@ -208,6 +213,11 @@ if minetest.settings:get_bool("spawncraft_cave_spider", true) then
             {"mcl_mobitems:spider_eye", DEBRIS, "mcl_mobitems:spider_eye"},
             {EGG, "mcl_mobitems:string", EGG}
         }
+    })
+    minetest.register_craft({
+        output = "mobs_mc:cave_spider",
+        type = "shapeless",
+        recipe = {"mobs_mc:spider"}
     })
 end
 
@@ -360,6 +370,82 @@ if minetest.settings:get_bool("spawncraft_mule", true) then
             })
         end
     end
+end
+
+if minetest.settings:get_bool("spawncraft_skeleton_horse", true) then
+    minetest.register_craft({
+        output = "mobs_mc:skeleton_horse",
+        recipe = {
+            {EGG, "mcl_mobitems:saddle", EGG},
+            {"mcl_mobitems:bone", DEBRIS, "mcl_mobitems:bone"},
+            {EGG, "mcl_mobitems:saddle", EGG}
+        }
+    })
+    if minetest.settings:get_bool("spawncraft_skeleton", true) then
+        minetest.register_craft({
+            output = "mobs_mc:skeleton_horse",
+            type = "shapeless",
+            recipe = {"mobs_mc:skeleton", "mcl_mobitems:saddle"}
+        })
+        if minetest.settings:get_bool("spawncraft_horse", true) then
+            minetest.register_craft({
+                output = "mobs_mc:skeleton_horse 2",
+                type = "shapeless",
+                recipe = {"mobs_mc:skeleton", "mcl_mobitems:horse"}
+            })
+        end
+    end
+    if minetest.settings:get_bool("spawncraft_horse", true) then
+        minetest.register_craft({
+            output = "mobs_mc:skeleton_horse",
+            type = "shapeless",
+            recipe = {"mobs_mc:horse", "mcl_mobitems:bone"}
+        })
+    end
+end
+
+--False, since it's actually disabled in MineClone's code
+if minetest.settings:get_bool("spawncraft_zombie_horse", false) then
+    minetest.register_craft({
+        output = "mobs_mc:zombie_horse",
+        recipe = {
+            {EGG, "mcl_mobitems:saddle", EGG},
+            {"mcl_mobitems:rotten_flesh", DEBRIS, "mcl_mobitems:rotten_flesh"},
+            {EGG, "mcl_mobitems:saddle", EGG}
+        }
+    })
+    if minetest.settings:get_bool("spawncraft_zombie", true) then
+        minetest.register_craft({
+            output = "mobs_mc:zombie_horse",
+            type = "shapeless",
+            recipe = {"mobs_mc:zombie", "mcl_mobitems:saddle"}
+        })
+        if minetest.settings:get_bool("spawncraft_horse", true) then
+            minetest.register_craft({
+                output = "mobs_mc:zombie_horse 2",
+                type = "shapeless",
+                recipe = {"mobs_mc:zombie", "mcl_mobitems:horse"}
+            })
+        end
+    end
+    if minetest.settings:get_bool("spawncraft_horse", true) then
+        minetest.register_craft({
+            output = "mobs_mc:zombie_horse",
+            type = "shapeless",
+            recipe = {"mobs_mc:horse", "mcl_mobitems:rotten_flesh"}
+        })
+    end
+end
+
+if minetest.settings:get_bool("spawncraft_llama", true) then
+    minetest.register_craft({
+        output = "mobs_mc:llama",
+        recipe = {
+            {EGG, "group:carpet", EGG},
+            {"mcl_mobitems:leather", DEBRIS, "mcl_mobitems:leather"},
+            {EGG, "group:carpet", EGG}
+        }
+    })
 end
 
 if minetest.settings:get_bool("spawncraft_bat", true) then
@@ -599,4 +685,222 @@ if minetest.settings:get_bool("spawncraft_killer_bunny", true) then
             }
         })
     end
+end
+
+if minetest.settings:get_bool("spawncraft_pig", true) then
+    minetest.register_craft({
+        output = "mobs_mc:pig",
+        recipe = {
+            {EGG, "mcl_mobitems:porkchop", EGG},
+            {"mcl_mobitems:porkchop", DEBRIS, "mcl_mobitems:porkchop"},
+            {EGG, "mcl_mobitems:porkchop", EGG}
+        }
+    })
+    minetest.register_craft({
+        output = "mobs_mc:pig",
+        recipe = {
+            {EGG, "mcl_mobitems:cooked_porkchop", EGG},
+            {"mcl_mobitems:cooked_porkchop", DEBRIS, "mcl_mobitems:cooked_porkchop"},
+            {EGG, "mcl_mobitems:cooked_porkchop", EGG}
+        }
+    })
+end
+
+if minetest.settings:get_bool("spawncraft_cow", true) then
+    minetest.register_craft({
+        output = "mobs_mc:cow",
+        recipe = {
+            {EGG, "mcl_mobitems:beef", EGG},
+            {"mcl_mobitems:beef", DEBRIS, "mcl_mobitems:beef"},
+            {EGG, "mcl_mobitems:beef", EGG}
+        }
+    })
+    minetest.register_craft({
+        output = "mobs_mc:cow",
+        recipe = {
+            {EGG, "mcl_mobitems:cooked_beef", EGG},
+            {"mcl_mobitems:cooked_beef", DEBRIS, "mcl_mobitems:cooked_beef"},
+            {EGG, "mcl_mobitems:cooked_beef", EGG}
+        }
+    })
+end
+
+if minetest.settings:get_bool("spawncraft_sheep", true) then
+    minetest.register_craft({
+        output = "mobs_mc:sheep",
+        recipe = {
+            {EGG, "mcl_mobitems:mutton", EGG},
+            {"mcl_mobitems:mutton", DEBRIS, "mcl_mobitems:mutton"},
+            {EGG, "mcl_mobitems:mutton", EGG}
+        }
+    })
+    minetest.register_craft({
+        output = "mobs_mc:sheep",
+        recipe = {
+            {EGG, "mcl_mobitems:cooked_mutton", EGG},
+            {"mcl_mobitems:cooked_mutton", DEBRIS, "mcl_mobitems:cooked_mutton"},
+            {EGG, "mcl_mobitems:cooked_mutton", EGG}
+        }
+    })
+end
+
+if minetest.settings:get_bool("spawncraft_parrot", true) then
+    minetest.register_craft({
+        output = "mobs_mc:parrot",
+        recipe = {
+            {EGG, "mcl_mobitems:feather", EGG},
+            {"group:dye", DEBRIS, "group:dye"},
+            {EGG, "mcl_mobitems:feather", EGG}
+        }
+    })
+    if minetest.settings:get_bool("spawncraft_chicken", true) then
+        minetest.register_craft({
+            output = "mobs_mc:parrot",
+            type = "shapeless",
+            recipe = {"mobs_mc:chicken", "group:dye"}
+        })
+    end
+end
+
+if minetest.settings:get_bool("spawncraft_squid", true) then
+    minetest.register_craft({
+        output = "mobs_mc:squid",
+        recipe = {
+            {EGG, "mcl_mobitems:ink_sac", EGG},
+            {"mcl_mobitems:ink_sac", DEBRIS, "mcl_mobitems:ink_sac"},
+            {EGG, "mcl_mobitems:ink_sac", EGG}
+        }
+    })
+    if minetest.settings:get_bool("spawncraft_glow_squid", true) then
+        minetest.register_craft({
+            output = "mobs_mc:squid",
+            type = "shapeless",
+            recipe = {"mobs_mc:glow_squid"}
+        })
+    end
+end
+
+if minetest.settings:get_bool("spawncraft_glow_squid", true) then
+    minetest.register_craft({
+        output = "mobs_mc:glow_squid",
+        recipe = {
+            {EGG, "mcl_mobitems:glow_ink_sac", EGG},
+            {"mcl_mobitems:glow_ink_sac", DEBRIS, "mcl_mobitems:glow_ink_sac"},
+            {EGG, "mcl_mobitems:glow_ink_sac", EGG}
+        }
+    })
+    if minetest.settings:get_bool("spawncraft_squid", true) then
+        minetest.register_craft({
+            output = "mobs_mc:glow_squid",
+            type = "shapeless",
+            recipe = {"mobs_mc:squid", "mcl_mobitems:glow_ink_sac"}
+        })
+    end
+end
+
+if minetest.settings:get_bool("spawncraft_snow_golem", true) then
+    minetest.register_craft({
+        output = "mobs_mc:snow_golem",
+        recipe = {
+            {EGG, "mcl_farming:pumpkin_face_light", EGG},
+            {"mcl_core:snowblock", DEBRIS, "mcl_core:snowblock"},
+            {EGG, "mcl_core:snowblock", EGG}
+        }
+    })
+end
+
+--Kind of a weird recipe because I really wanted it to include all the iron blocks
+if minetest.settings:get_bool("spawncraft_iron_golem", true) then
+    minetest.register_craft({
+        output = "mobs_mc:iron_golem",
+        recipe = {
+            {DEBRIS, "mcl_farming:pumpkin_face_light", EGG},
+            {"mcl_core:ironblock", "mcl_core:ironblock", "mcl_core:ironblock"},
+            {EGG, "mcl_core:ironblock", EGG}
+        }
+    })
+end
+
+if minetest.settings:get_bool("spawncraft_strider", true) then
+    minetest.register_craft({
+        output = "mobs_mc:strider",
+        recipe = {
+            {DEBRIS, "mcl_mobitems:saddle", EGG},
+            {"mcl_buckets:bucket_lava", DEBRIS, "mcl_buckets:bucket_lava"},
+            {EGG, "mcl_buckets:bucket_lava", EGG}
+        }
+    })
+end
+
+if minetest.settings:get_bool("spawncraft_polar_bear", true) then
+    minetest.register_craft({
+        output = "mobs_mc:polar_bear",
+        recipe = {
+            {EGG, "mcl_core:ice", EGG},
+            {"mcl_core:snowblock", DEBRIS, "mcl_core:snowblock"},
+            {EGG, "mcl_core:ice", EGG}
+        }
+    })
+end
+
+if minetest.settings:get_bool("spawncraft_guardian", true) then
+    minetest.register_craft({
+        output = "mobs_mc:guardian",
+        recipe = {
+            {EGG, "mcl_ocean:sea_lantern", EGG},
+            {"mcl_ocean:sea_lantern", DEBRIS, "mcl_ocean:sea_lantern"},
+            {EGG, "mcl_ocean:sea_lantern", EGG}
+        }
+    })
+    if minetest.settings:get_bool("spawncraft_elder_guardian", true) then
+        minetest.register_craft({
+            output = "mobs_mc:guardian 4",
+            type = "shapeless",
+            recipe = {
+                {"mobs_mc:guardian_elder"}
+            }
+        })
+    end
+end
+
+if minetest.settings:get_bool("spawncraft_elder_guardian", true) then
+    minetest.register_craft({
+        output = "mobs_mc:guardian",
+        recipe = {
+            {EGG, "mcl_ocean:sea_lantern", EGG},
+            {"mcl_ocean:sea_lantern", "mcl_nether:netherite_ingot", "mcl_ocean:sea_lantern"},
+            {EGG, "mcl_ocean:sea_lantern", EGG}
+        }
+    })
+    if minetest.settings:get_bool("spawncraft_guardian", true) then
+        minetest.register_craft({
+            output = "mobs_mc:guardian_elder",
+            type = "shapeless",
+            recipe = {
+                {"mobs_mc:guardian_elder"}
+            }
+        })
+    end
+end
+
+if minetest.settings:get_bool("spawncraft_magma_cube", true) then
+    minetest.register_craft({
+        output = "mobs_mc:magma_cube",
+        recipe = {
+            {EGG, "mcl_mobitems:magma_cream", EGG},
+            {"mcl_mobitems:magma_cream", DEBRIS, "mcl_mobitems:magma_cream"},
+            {EGG, "mcl_mobitems:magma_cream", EGG}
+        }
+    })
+end
+
+if minetest.settings:get_bool("spawncraft_ghast", true) then
+    minetest.register_craft({
+        output = "mobs_mc:ghast",
+        recipe = {
+            {EGG, "mcl_mobitems:ghast_tear", EGG},
+            {"mcl_mobitems:ghast_tear", DEBRIS, "mcl_mobitems:ghast_tear"},
+            {EGG, "mcl_mobitems:ghast_tear", EGG}
+        }
+    })
 end

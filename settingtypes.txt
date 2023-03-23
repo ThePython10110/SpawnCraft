@@ -173,7 +173,10 @@ spawncraft_piglin_brute (Allow piglin brute egg recipe) bool true
 spawncraft_tropical_fish (Allow tropical fish egg recipe) bool true
 
 #	Allows crafting zombie horse eggs
-spawncraft_zombie_horse (Allow zombie horse egg recipe) bool true
+#   Warning: Zombie horses are disabled by default; you will need to go into MineClone's code
+#   and change line 646 in mods/ENTITIES/mobs_mc/horse.lua to enable them. I have no idea
+#   whether there's a bug with them or something, but the line is commented out...
+spawncraft_zombie_horse (Allow zombie horse egg recipe) bool false
 
 #	Allows crafting skeleton horse eggs
 spawncraft_skeleton_horse (Allow skeleton horse egg recipe) bool true
