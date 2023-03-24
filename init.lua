@@ -1230,7 +1230,7 @@ end
 
 if minetest.settings:get_bool("spawncraft_silverfish", true) then
     minetest.register_craft({
-        ouput = "mobs_mc:silverfish",
+        output = "mobs_mc:silverfish",
         recipe = {
             {EGG, "mcl_end:ender_eye", EGG},
             {"mcl_core:cobble", DEBRIS, "mcl_core:cobble"},
