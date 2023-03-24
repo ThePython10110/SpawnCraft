@@ -70,6 +70,9 @@ spawncraft_squid (Allow squid egg recipe) bool true
 #	Allows crafting strider eggs
 spawncraft_strider (Allow strider egg recipe) bool true
 
+#	Allows crafting baby strider eggs
+spawncraft_baby_strider (Allow baby strider egg recipe) bool true
+
 #	Allows crafting villager eggs
 spawncraft_villager (Allow villager egg recipe) bool true
 
@@ -142,6 +145,9 @@ spawncraft_dolphin (Allow dolphin egg recipe) bool true
 #	Allows crafting hoglin eggs
 spawncraft_hoglin (Allow hoglin egg recipe) bool true
 
+#	Allows crafting baby hoglin eggs
+spawncraft_baby_hoglin (Allow baby hoglin egg recipe) bool true
+
 #	Allows crafting piglin eggs
 spawncraft_piglin (Allow piglin egg recipe) bool true
 
@@ -150,6 +156,9 @@ spawncraft_zombie_villager (Allow zombie villager egg recipe) bool true
 
 #	Allows crafting zombie pigman eggs
 spawncraft_zombie_pigman (Allow zombie pigman egg recipe) bool true
+
+#	Allows crafting baby zombie pigman eggs
+spawncraft_baby_zombie_pigman (Allow baby zombie pigman egg recipe) bool true
 
 #	Allows crafting evoker eggs
 spawncraft_evoker (Allow evoker egg recipe) bool true
