@@ -1235,6 +1235,7 @@ if minetest.settings:get_bool("spawncraft_vex") then
     if minetest.settings:get_bool("spawncraft_evoker") then
         minetest.register_craft({
             output = "mobs_mc:vex 4",
+            type = "shapeless",
             recipe = {"mobs_mc:evoker"}
         })
     end
