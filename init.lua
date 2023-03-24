@@ -42,46 +42,6 @@ if minetest.settings:get_bool("spawncraft_zombie", true) then
             recipe = {"mobs_mc:villager_zombie", "mcl_mobitems:rotten_flesh"}
         })
     end
-    if minetest.settings:get_bool("spawncraft_baby_zombie", true) then
-        minetest.register_craft({
-            output = "mobs_mc:zombie",
-            type = "shapeless",
-            recipe = {"mobs_mc:baby_zombie"}
-        })
-    end
-end
-
-if minetest.settings:get_bool("spawncraft_baby_zombie", true) then
-    minetest.register_craft({
-        output = "mobs_mc:baby_zombie",
-        recipe = {
-            {EGG, "", EGG},
-            {"mcl_mobitems:rotten_flesh", DEBRIS, "mcl_mobitems:rotten_flesh"},
-            {EGG, "mcl_mobitems:rotten_flesh", EGG}
-        }
-    })
-    if minetest.settings:get_bool("spawncraft_baby_husk", true) then
-        minetest.register_craft({
-            output = "mobs_mc:baby_zombie",
-            type = "shapeless",
-            recipe = {"mobs_mc:baby_husk", "mcl_mobitems:rotten_flesh"}
-        })
-    end
-    if minetest.settings:get_bool("spawncraft_zombie", true) then
-        minetest.register_craft({
-            output = "mobs_mc:baby_zombie",
-            type = "shapeless",
-            recipe = {"mobs_mc:zombie"}
-        })
-    else
-        if minetest.settings:get_bool("spawncraft_zombie_villager", true) then
-            minetest.register_craft({
-                output = "mobs_mc:baby_zombie",
-                type = "shapeless",
-                recipe = {"mobs_mc:villager_zombie", "mcl_mobitems:rotten_flesh"}
-            })
-        end
-    end
 end
 
 if minetest.settings:get_bool("spawncraft_husk", true) then
@@ -107,46 +67,6 @@ if minetest.settings:get_bool("spawncraft_husk", true) then
             recipe = {"mobs_mc:villager_zombie", "group:sand"}
         })
     end
-    if minetest.settings:get_bool("spawncraft_baby_husk", true) then
-        minetest.register_craft({
-            output = "mobs_mc:husk",
-            type = "shapeless",
-            recipe = {"mobs_mc:baby_husk"}
-        })
-    end
-end
-
-if minetest.settings:get_bool("spawncraft_baby_husk", true) then
-    minetest.register_craft({
-        output = "mobs_mc:baby_husk",
-        recipe = {
-            {EGG, "", EGG},
-            {"group:sand", DEBRIS, "group:sand"},
-            {EGG, "mcl_mobitems:rotten_flesh", EGG}
-        }
-    })
-    if minetest.settings:get_bool("spawncraft_baby_zombie", true) then
-        minetest.register_craft({
-            output = "mobs_mc:baby_husk",
-            type = "shapeless",
-            recipe = {"mobs_mc:baby_zombie", "group:sand"}
-        })
-    end
-    if minetest.settings:get_bool("spawncraft_husk", true) then
-        minetest.register_craft({
-            output = "mobs_mc:baby_husk",
-            type = "shapeless",
-            recipe = {"mobs_mc:husk"}
-        })
-    else
-        if minetest.settings:get_bool("spawncraft_zombie_villager", true) then
-            minetest.register_craft({
-                output = "mobs_mc:baby_husk",
-                type = "shapeless",
-                recipe = {"mobs_mc:villager_zombie", "group:sand"}
-            })
-        end
-    end
 end
 
 
@@ -155,7 +75,7 @@ if minetest.settings:get_bool("spawncraft_zombie_villager", true) then
         output = "mobs_mc:villager_zombie",
         recipe = {
             {EGG, "mcl_mobitems:rotten_flesh", EGG},
-            {"mcl_core:emeralds", DEBRIS, "mcl_core:emeralds"},
+            {"mcl_core:emerald", DEBRIS, "mcl_core:emerald"},
             {EGG, "mcl_mobitems:rotten_flesh", EGG}
         }
     })
@@ -163,7 +83,7 @@ if minetest.settings:get_bool("spawncraft_zombie_villager", true) then
         minetest.register_craft({
             output = "mobs_mc:villager_zombie",
             type = "shapeless",
-            recipe = {"mobs_mc:zombie", "group:emerald"}
+            recipe = {"mobs_mc:zombie", "mcl_core:emerald"}
         })
         if minetest.settings:get_bool("spawncraft_villager", true) then
             minetest.register_craft({
@@ -230,7 +150,7 @@ if minetest.settings:get_bool("spawncraft_wither_skeleton", true) then
     minetest.register_craft({
         output = "mobs_mc:witherskeleton",
         recipe = {
-            {EGG, "mcl_heads:witherskeleton", EGG},
+            {EGG, "mcl_heads:wither_skeleton", EGG},
             {"mcl_mobitems:bone", DEBRIS, "mcl_mobitems:bone"},
             {EGG, "mcl_mobitems:bone", EGG}
         }
@@ -239,14 +159,14 @@ if minetest.settings:get_bool("spawncraft_wither_skeleton", true) then
         minetest.register_craft({
             output = "mobs_mc:witherskeleton",
             type = "shapeless",
-            recipe = {"mobs_mc:skeleton", "mcl_heads:witherskeleton"}
+            recipe = {"mobs_mc:skeleton", "mcl_heads:wither_skeleton"}
         })
     end
     if minetest.settings:get_bool("spawncraft_stray", true) then
         minetest.register_craft({
             output = "mobs_mc:witherskeleton",
             type = "shapeless",
-            recipe = {"mobs_mc:stray", "mcl_heads:witherskeleton"}
+            recipe = {"mobs_mc:stray", "mcl_heads:wither_skeleton"}
         })
     end
 end
@@ -371,7 +291,7 @@ if minetest.settings:get_bool("spawncraft_wither", true) then
     minetest.register_craft({
         output = "mobs_mc:wither",
         recipe = {
-            {"mcl_heads:witherskeleton", "mcl_heads:witherskeleton", "mcl_heads:witherskeleton"},
+            {"mcl_heads:wither_skeleton", "mcl_heads:wither_skeleton", "mcl_heads:wither_skeleton"},
             {"mcl_nether:soul_sand", "mcl_mobitems:nether_star", "mcl_nether:soul_sand"},
             {EGG, "mcl_nether:soul_sand", EGG}
         }
@@ -471,7 +391,7 @@ if minetest.settings:get_bool("spawncraft_skeleton_horse", true) then
             minetest.register_craft({
                 output = "mobs_mc:skeleton_horse 2",
                 type = "shapeless",
-                recipe = {"mobs_mc:skeleton", "mcl_mobitems:horse"}
+                recipe = {"mobs_mc:skeleton", "mobs_mc:horse"}
             })
         end
     end
@@ -543,25 +463,25 @@ if minetest.settings:get_bool("spawncraft_cat", true) then
     minetest.register_craft({
         output = "mobs_mc:cat",
         recipe = {
-            {EGG, "mcl_buckets:bucket_milk", EGG},
+            {EGG, "mcl_mobitems:milk_bucket", EGG},
             {"mcl_fishing:fish_raw", DEBRIS, "mcl_fishing:fish_raw"},
-            {EGG, "mcl_buckets:bucket_milk", EGG}
+            {EGG, "mcl_mobitems:milk_bucket", EGG}
         },
         replacements = {
-            {"mcl_buckets:bucket_milk", "mcl_buckets:bucket_empty"},
-            {"mcl_buckets:bucket_milk", "mcl_buckets:bucket_empty"}
+            {"mcl_mobitems:milk_bucket", "mcl_buckets:bucket_empty"},
+            {"mcl_mobitems:milk_bucket", "mcl_buckets:bucket_empty"}
         }
     })
     minetest.register_craft({
         output = "mobs_mc:cat",
         recipe = {
-            {EGG, "mcl_buckets:bucket_milk", EGG},
+            {EGG, "mcl_mobitems:milk_bucket", EGG},
             {"mcl_fishing:salmon_raw", DEBRIS, "mcl_fishing:salmon_raw"},
-            {EGG, "mcl_buckets:bucket_milk", EGG}
+            {EGG, "mcl_mobitems:milk_bucket", EGG}
         },
         replacements = {
-            {"mcl_buckets:bucket_milk", "mcl_buckets:bucket_empty"},
-            {"mcl_buckets:bucket_milk", "mcl_buckets:bucket_empty"}
+            {"mcl_mobitems:milk_bucket", "mcl_buckets:bucket_empty"},
+            {"mcl_mobitems:milk_bucket", "mcl_buckets:bucket_empty"}
         }
     })
     if minetest.settings:get_bool("spawncraft_ocelot", true) then
@@ -578,24 +498,24 @@ if minetest.settings:get_bool("spawncraft_ocelot", true) then
         output = "mobs_mc:ocelot",
         recipe = {
             {EGG, "mcl_fishing:fish_raw", EGG},
-            {"mcl_buckets:bucket_milk", DEBRIS, "mcl_buckets:bucket_milk"},
+            {"mcl_mobitems:milk_bucket", DEBRIS, "mcl_mobitems:milk_bucket"},
             {EGG, "mcl_fishing:fish_raw", EGG}
         },
         replacements = {
-            {"mcl_buckets:bucket_milk", "mcl_buckets:bucket_empty"},
-            {"mcl_buckets:bucket_milk", "mcl_buckets:bucket_empty"}
+            {"mcl_mobitems:milk_bucket", "mcl_buckets:bucket_empty"},
+            {"mcl_mobitems:milk_bucket", "mcl_buckets:bucket_empty"}
         }
     })
     minetest.register_craft({
         output = "mobs_mc:ocelot",
         recipe = {
             {EGG, "mcl_fishing:salmon_raw", EGG},
-            {"mcl_buckets:bucket_milk", DEBRIS, "mcl_buckets:bucket_milk"},
+            {"mcl_mobitems:milk_bucket", DEBRIS, "mcl_mobitems:milk_bucket"},
             {EGG, "mcl_fishing:salmon_raw", EGG}
         },
         replacements = {
-            {"mcl_buckets:bucket_milk", "mcl_buckets:bucket_empty"},
-            {"mcl_buckets:bucket_milk", "mcl_buckets:bucket_empty"}
+            {"mcl_mobitems:milk_bucket", "mcl_buckets:bucket_empty"},
+            {"mcl_mobitems:milk_bucket", "mcl_buckets:bucket_empty"}
         }
     })
     if minetest.settings:get_bool("spawncraft_cat", true) then
@@ -780,7 +700,7 @@ if minetest.settings:get_bool("spawncraft_killer_bunny", true) then
         minetest.register_craft({
             output = "mobs_mc:killer_bunny",
             recipe = {
-                {"mesecons:redstone", "mobs_mc:killer_bunny", "mesecons:redstone"}
+                {"mesecons:redstone", "mobs_mc:rabbit", "mesecons:redstone"}
             }
         })
     end
@@ -934,37 +854,6 @@ if minetest.settings:get_bool("spawncraft_strider", true) then
             {"mcl_buckets:bucket_bucket_lava", "mcl_buckets:bucket_empty"}
         }
     })
-    if minetest.settings:get_bool("spawncraft_baby_strider", true) then
-        minetest.register_craft({
-            output = "mobs_mc:strider",
-            type = "shapeless",
-            recipe = {"mobs_mc:baby_strider"}
-        })
-    end
-end
-
-if minetest.settings:get_bool("spawncraft_baby_strider", true) then
-    minetest.register_craft({
-        output = "mobs_mc:baby_strider",
-        recipe = {
-            {EGG, "mcl_mobitems:bucket_lava", EGG},
-            {"mcl_buckets:bucket_lava", DEBRIS, "mcl_buckets:bucket_lava"},
-            {EGG, "mcl_buckets:bucket_lava", EGG}
-        },
-        replacements = {
-            {"mcl_buckets:bucket_bucket_lava", "mcl_buckets:bucket_empty"},
-            {"mcl_buckets:bucket_bucket_lava", "mcl_buckets:bucket_empty"},
-            {"mcl_buckets:bucket_bucket_lava", "mcl_buckets:bucket_empty"},
-            {"mcl_buckets:bucket_bucket_lava", "mcl_buckets:bucket_empty"}
-        }
-    })
-    if minetest.settings:get_bool("spawncraft_baby_strider", true) then
-        minetest.register_craft({
-            output = "mobs_mc:baby_strider",
-            type = "shapeless",
-            recipe = {"mobs_mc:strider"}
-        })
-    end
 end
 
 if minetest.settings:get_bool("spawncraft_polar_bear", true) then
@@ -999,7 +888,7 @@ end
 
 if minetest.settings:get_bool("spawncraft_elder_guardian", true) then
     minetest.register_craft({
-        output = "mobs_mc:guardian",
+        output = "mobs_mc:guardian_elder",
         recipe = {
             {EGG, "mcl_ocean:sea_lantern", EGG},
             {"mcl_ocean:sea_lantern", "mcl_nether:netherite_ingot", "mcl_ocean:sea_lantern"},
@@ -1010,7 +899,7 @@ if minetest.settings:get_bool("spawncraft_elder_guardian", true) then
         minetest.register_craft({
             output = "mobs_mc:guardian_elder",
             type = "shapeless",
-            recipe = {"mobs_mc:guardian_elder"}
+            recipe = {"mobs_mc:guardian", "mobs_mc:guardian", "mobs_mc:guardian", "mobs_mc:guardian"}
         })
     end
 end
@@ -1057,13 +946,6 @@ if minetest.settings:get_bool("spawncraft_zombie_pigman", true) then
             {EGG, "mcl_mobitems:porkchop", EGG}
         }
     })
-    if minetest.settings:get_bool("spawncraft_baby_zombie_pigman", true) then
-        minetest.register_craft({
-            output = "mobs_mc:pigman",
-            type = "shapeless",
-            recipe = {"mobs_mc:baby_pigman"}
-        })
-    end
     if minetest.settings:get_bool("spawncraft_pig") then
         minetest.register_craft({
             output = "mobs_mc:pigman",
@@ -1083,46 +965,6 @@ if minetest.settings:get_bool("spawncraft_zombie_pigman", true) then
                 type = "shapeless",
                 recipe = {"mobs_mc:pig", "mobs_mc:zombie"}
             })
-        end
-    end
-end
-
-if minetest.settings:get_bool("spawncraft_baby_zombie_pigman", true) then
-    minetest.register_craft({
-        output = "mobs_mc:baby_pigman",
-        recipe = {
-            {EGG, "mcl_mobitems:rotten_flesh", EGG},
-            {"mcl_mobitems:porkchop", DEBRIS, "mcl_mobitems:porkchop"},
-            {EGG, "mcl_mobitems:rotten_flesh", EGG}
-        }
-    })
-    if minetest.settings:get_bool("spawncraft_zombie_pigman", true) then
-        minetest.register_craft({
-            output = "mobs_mc:baby_pigman",
-            type = "shapeless",
-            recipe = {"mobs_mc:pigman"}
-        })
-    else
-        if minetest.settings:get_bool("spawncraft_pig") then
-            minetest.register_craft({
-                output = "mobs_mc:baby_pigman",
-                type = "shapeless",
-                recipe = {"mobs_mc:pig", "mcl_mobitems:rotten_flesh"}
-            })
-        end
-        if minetest.settings:get_bool("spawncraft_zombie") then
-            minetest.register_craft({
-                output = "mobs_mc:pigman",
-                type = "shapeless",
-                recipe = {"mobs_mc:zombie", "mcl_mobitems:porkchop"}
-            })
-            if minetest.settings:get_bool("spawncraft_pig") then
-                minetest.register_craft({
-                    output = "mobs_mc:pigman",
-                    type = "shapeless",
-                    recipe = {"mobs_mc:pig", "mobs_mc:zombie"}
-                })
-            end
         end
     end
 end
@@ -1186,45 +1028,12 @@ if minetest.settings:get_bool("spawncraft_hoglin", true) then
             {EGG, "mcl_mobitems:porkchop", EGG}
         }
     })
-    if minetest.settings:get_bool("spawncraft_baby_hoglin", true) then
-        minetest.register_craft({
-            output = "mobs_mc:hoglin",
-            type = "shapeless",
-            recipe = {"mobs_mc:baby_hoglin"}
-        })
-    end
     if minetest.settings:get_bool("spawncraft_pig", true) then
         minetest.register_craft({
             output = "mobs_mc:hoglin",
             type = "shapeless",
             recipe = {"mobs_mc:pig", "mcl_nether:nether_wart_block"}
         })
-    end
-end
-
-if minetest.settings:get_bool("spawncraft_baby_hoglin", true) then
-    minetest.register_craft({
-        output = "mobs_mc:baby_hoglin",
-        recipe = {
-            {EGG, "", EGG},
-            {"mcl_nether:nether_wart_block", DEBRIS, "mcl_nether:nether_wart_block"},
-            {EGG, "mcl_mobitems:porkchop", EGG}
-        }
-    })
-    if minetest.settings:get_bool("spawncraft_hoglin", true) then
-        minetest.register_craft({
-            output = "mobs_mc:baby_hoglin",
-            type = "shapeless",
-            recipe = {"mobs_mc:hoglin"}
-        })
-    else
-        if minetest.settings:get_bool("spawncraft_pig", true) then
-            minetest.register_craft({
-                output = "mobs_mc:baby_hoglin",
-                type = "shapeless",
-                recipe = {"mobs_mc:pig", "mcl_nether:nether_wart_block"}
-            })
-        end
     end
 end
 
@@ -1251,7 +1060,7 @@ if minetest.settings:get_bool("spawncraft_endermite", true) then
         output = "mobs_mc:endermite",
         recipe = {
             {EGG, "", EGG},
-            {"mcl_mobitems:ender_pearl", DEBRIS, "mcl_mobitems:ender_pearl"},
+            {"mcl_throwing:ender_pearl", DEBRIS, "mcl_throwing:ender_pearl"},
             {EGG, "", EGG}
 
         }
@@ -1260,7 +1069,7 @@ if minetest.settings:get_bool("spawncraft_endermite", true) then
         minetest.register_craft({
             output = "mobs_mc:endermite",
             type = "shapeless",
-            recipe = {"mobs_mc:silverfish", "mcl_mobitems:ender_pearl"}
+            recipe = {"mobs_mc:silverfish", "mcl_throwing:ender_pearl"}
         })
     end
 end
