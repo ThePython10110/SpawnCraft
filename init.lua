@@ -1010,9 +1010,7 @@ if minetest.settings:get_bool("spawncraft_elder_guardian", true) then
         minetest.register_craft({
             output = "mobs_mc:guardian_elder",
             type = "shapeless",
-            recipe = {
-                {"mobs_mc:guardian_elder"}
-            }
+            recipe = {"mobs_mc:guardian_elder"}
         })
     end
 end
@@ -1063,9 +1061,7 @@ if minetest.settings:get_bool("spawncraft_zombie_pigman", true) then
         minetest.register_craft({
             output = "mobs_mc:pigman",
             type = "shapeless",
-            recipe = {
-                {"mobs_mc:baby_pigman"}
-            }
+            recipe = {"mobs_mc:baby_pigman"}
         })
     end
     if minetest.settings:get_bool("spawncraft_pig") then
@@ -1104,9 +1100,7 @@ if minetest.settings:get_bool("spawncraft_baby_zombie_pigman", true) then
         minetest.register_craft({
             output = "mobs_mc:baby_pigman",
             type = "shapeless",
-            recipe = {
-                {"mobs_mc:pigman"}
-            }
+            recipe = {"mobs_mc:pigman"}
         })
     else
         if minetest.settings:get_bool("spawncraft_pig") then
@@ -1146,18 +1140,14 @@ if minetest.settings:get_bool("spawncraft_piglin", true) then
         minetest.register_craft({
             output = "mobs_mc:piglin",
             type = "shapeless",
-            recipe = {
-                {"mobs_mc:piglin_brute"}
-            }
+            recipe = {"mobs_mc:piglin_brute"}
         })
     end
     if minetest.settings:get_bool("spawncraft_pig", true) then
         minetest.register_craft({
             output = "mobs_mc:piglin",
             type = "shapeless",
-            recipe = {
-                {"mobs_mc:pig", "mcl_core:gold_ingot"}
-            }
+            recipe = {"mobs_mc:pig", "mcl_core:gold_ingot"}
         })
     end
 end
@@ -1175,18 +1165,14 @@ if minetest.settings:get_bool("spawncraft_piglin_brute", true) then
         minetest.register_craft({
             output = "mobs_mc:piglin_brute",
             type = "shapeless",
-            recipe = {
-                {"mobs_mc:piglin", "mcl_core:axe_gold"}
-            }
+            recipe = {"mobs_mc:piglin", "mcl_core:axe_gold"}
         })
     end
     if minetest.settings:get_bool("spawncraft_pig", true) then
         minetest.register_craft({
             output = "mobs_mc:piglin_brute",
             type = "shapeless",
-            recipe = {
-                {"mobs_mc:pig", "mcl_core:axe_gold"}
-            }
+            recipe = {"mobs_mc:pig", "mcl_core:axe_gold"}
         })
     end
 end
