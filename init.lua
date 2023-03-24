@@ -459,40 +459,6 @@ if minetest.settings:get_bool("spawncraft_bat", true) then
     })
 end
 
-if minetest.settings:get_bool("spawncraft_cat", true) then
-    minetest.register_craft({
-        output = "mobs_mc:cat",
-        recipe = {
-            {EGG, "mcl_mobitems:milk_bucket", EGG},
-            {"mcl_fishing:fish_raw", DEBRIS, "mcl_fishing:fish_raw"},
-            {EGG, "mcl_mobitems:milk_bucket", EGG}
-        },
-        replacements = {
-            {"mcl_mobitems:milk_bucket", "mcl_buckets:bucket_empty"},
-            {"mcl_mobitems:milk_bucket", "mcl_buckets:bucket_empty"}
-        }
-    })
-    minetest.register_craft({
-        output = "mobs_mc:cat",
-        recipe = {
-            {EGG, "mcl_mobitems:milk_bucket", EGG},
-            {"mcl_fishing:salmon_raw", DEBRIS, "mcl_fishing:salmon_raw"},
-            {EGG, "mcl_mobitems:milk_bucket", EGG}
-        },
-        replacements = {
-            {"mcl_mobitems:milk_bucket", "mcl_buckets:bucket_empty"},
-            {"mcl_mobitems:milk_bucket", "mcl_buckets:bucket_empty"}
-        }
-    })
-    if minetest.settings:get_bool("spawncraft_ocelot", true) then
-        minetest.register_craft({
-            output = "mobs_mc:cat",
-            type = "shapeless",
-            recipe = {"mobs_mc:ocelot"}
-        })
-    end
-end
-
 if minetest.settings:get_bool("spawncraft_ocelot", true) then
     minetest.register_craft({
         output = "mobs_mc:ocelot",
@@ -518,13 +484,6 @@ if minetest.settings:get_bool("spawncraft_ocelot", true) then
             {"mcl_mobitems:milk_bucket", "mcl_buckets:bucket_empty"}
         }
     })
-    if minetest.settings:get_bool("spawncraft_cat", true) then
-        minetest.register_craft({
-            output = "mobs_mc:ocelot",
-            type = "shapeless",
-            recipe = {"mobs_mc:cat"}
-        })
-    end
 end
 
 if minetest.settings:get_bool("spawncraft_cod", true) then
