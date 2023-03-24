@@ -69,7 +69,6 @@ if minetest.settings:get_bool("spawncraft_husk", true) then
     end
 end
 
-
 if minetest.settings:get_bool("spawncraft_zombie_villager", true) then
     minetest.register_craft({
         output = "mobs_mc:villager_zombie",
@@ -267,7 +266,7 @@ end
 
 if minetest.settings:get_bool("spawncraft_slime", true) then
     minetest.register_craft({
-        output = "mobs_mc:slime",
+        output = "mobs_mc:slime_big",
         recipe = {
             {EGG, "mcl_core:slimeblock", EGG},
             {"mcl_core:slimeblock", DEBRIS, "mcl_core:slimeblock"},
@@ -458,6 +457,8 @@ if minetest.settings:get_bool("spawncraft_bat", true) then
         }
     })
 end
+
+--Cat spawn eggs just don't exist for some reason...
 
 if minetest.settings:get_bool("spawncraft_ocelot", true) then
     minetest.register_craft({
@@ -865,7 +866,7 @@ end
 
 if minetest.settings:get_bool("spawncraft_magma_cube", true) then
     minetest.register_craft({
-        output = "mobs_mc:magma_cube",
+        output = "mobs_mc:magma_cube_big",
         recipe = {
             {EGG, "mcl_mobitems:magma_cream", EGG},
             {"mcl_mobitems:magma_cream", DEBRIS, "mcl_mobitems:magma_cream"},
