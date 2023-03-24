@@ -1033,3 +1033,231 @@ if minetest.settings:get_bool("spawncraft_endermite", true) then
         })
     end
 end
+
+if minetest.settings:get_bool("spawncraft_mooshroom", true) then
+    minetest.register_craft({
+        output = "mobs_mc:mooshroom",
+        recipe = {
+            {EGG, "mcl_mobitems:beef", EGG},
+            {"mcl_mushrooms:mushroom_brown", DEBRIS, "mcl_mushrooms:mushroom_red"},
+            {EGG, "mcl_mobitems:beef", EGG}
+        }
+    })
+    minetest.register_craft({
+        output = "mobs_mc:mooshroom",
+        recipe = {
+            {EGG, "mcl_mobitems:beef", EGG},
+            {"mcl_mushrooms:mushroom_red", DEBRIS, "mcl_mushrooms:mushroom_brown"},
+            {EGG, "mcl_mobitems:beef", EGG}
+        }
+    })
+    if minetest.settings:get_bool("spawncraft_cow", true) then
+        minetest.register_craft({
+            output = "mobs_mc:mooshroom",
+            type = "shapeless",
+            recipe = {"mobs_mc:cow", "mcl_mushrooms:mushroom_red", "mcl_mushrooms:mushroom_brown"}
+        })
+    end
+end
+
+if minetest.settings:get_bool("spawncraft_pillager") then
+    minetest.register_craft({
+        output = "mobs_mc:pillager",
+        recipe = {
+            {EGG, "mcl_bows:crossbow", EGG},
+            {"mcl_core:emerald", DEBRIS, "mcl_core:emerald"},
+            {EGG, "mcl_bows:crossbow", EGG}
+        }
+    })
+    if minetest.settings:get_bool("spawncraft_villager") then
+        minetest.register_craft({
+            output = "mobs_mc:pillager",
+            type = "shapeless",
+            recipe = {"mobs_mc:villager", "mcl_bows:crossbow"}
+        })
+    end
+    if minetest.settings:get_bool("spawncraft_vindicator") then
+        minetest.register_craft({
+            output = "mobs_mc:pillager",
+            type = "shapeless",
+            recipe = {"mobs_mc:vindicator", "mcl_bows:crossbow"}
+        })
+    end
+    if minetest.settings:get_bool("spawncraft_evoker") then
+        minetest.register_craft({
+            output = "mobs_mc:pillager",
+            type = "shapeless",
+            recipe = {"mobs_mc:evoker", "mcl_bows:crossbow"}
+        })
+    end
+    if minetest.settings:get_bool("spawncraft_illusioner") then
+        minetest.register_craft({
+            output = "mobs_mc:pillager",
+            type = "shapeless",
+            recipe = {"mobs_mc:illusioner", "mcl_bows:crossbow"}
+        })
+    end
+end
+
+if minetest.settings:get_bool("spawncraft_vindicator") then
+    minetest.register_craft({
+        output = "mobs_mc:vindicator",
+        recipe = {
+            {EGG, "mcl_tools:axe_iron", EGG},
+            {"mcl_core:emerald", DEBRIS, "mcl_core:emerald"},
+            {EGG, "mcl_tools:axe_iron", EGG}
+        }
+    })
+    if minetest.settings:get_bool("spawncraft_villager") then
+        minetest.register_craft({
+            output = "mobs_mc:vindicator",
+            type = "shapeless",
+            recipe = {"mobs_mc:villager", "mcl_tools:axe_iron"}
+        })
+    end
+    if minetest.settings:get_bool("spawncraft_pillager") then
+        minetest.register_craft({
+            output = "mobs_mc:vindicator",
+            type = "shapeless",
+            recipe = {"mobs_mc:pillager", "mcl_tools:axe_iron"}
+        })
+    end
+    if minetest.settings:get_bool("spawncraft_evoker") then
+        minetest.register_craft({
+            output = "mobs_mc:vindicator",
+            type = "shapeless",
+            recipe = {"mobs_mc:evoker", "mcl_tools:axe_iron"}
+        })
+    end
+    if minetest.settings:get_bool("spawncraft_illusioner") then
+        minetest.register_craft({
+            output = "mobs_mc:vindicator",
+            type = "shapeless",
+            recipe = {"mobs_mc:illusioner", "mcl_tools:axe_iron"}
+        })
+    end
+end
+
+if minetest.settings:get_bool("spawncraft_evoker") then
+    minetest.register_craft({
+        output = "mobs_mc:evoker",
+        recipe = {
+            {EGG, "", EGG},
+            {"mcl_core:emerald", DEBRIS, "mcl_core:emerald"},
+            {EGG, "mcl_totems:totem", EGG}
+        }
+    })
+    if minetest.settings:get_bool("spawncraft_villager") then
+        minetest.register_craft({
+            output = "mobs_mc:evoker",
+            type = "shapeless",
+            recipe = {"mobs_mc:villager", "mcl_totems:totem"}
+        })
+    end
+    if minetest.settings:get_bool("spawncraft_pillager") then
+        minetest.register_craft({
+            output = "mobs_mc:evoker",
+            type = "shapeless",
+            recipe = {"mobs_mc:pillager", "mcl_totems:totem"}
+        })
+    end
+    if minetest.settings:get_bool("spawncraft_vindicator") then
+        minetest.register_craft({
+            output = "mobs_mc:evoker",
+            type = "shapeless",
+            recipe = {"mobs_mc:vindicator", "mcl_totems:totem"}
+        })
+    end
+    if minetest.settings:get_bool("spawncraft_illusioner") then
+        minetest.register_craft({
+            output = "mobs_mc:evoker",
+            type = "shapeless",
+            recipe = {"mobs_mc:illusioner", "mcl_totems:totem"}
+        })
+    end
+    if minetest.settings:get_bool("spawncraft_vex", true) then
+        minetest.register_craft({
+            output = "mobs_mc:evoker",
+            type = "shapeless",
+            recipe = {"mobs_mc:vex", "mobs_mc:vex", "mobs_mc:vex", "mobs_mc:vex"}
+        })
+    end
+end
+
+if minetest.settings:get_bool("spawncraft_illusioner") then
+    minetest.register_craft({
+        output = "mobs_mc:illusioner",
+        recipe = {
+            {EGG, "mcl_core:glass", EGG},
+            {"mcl_core:emerald", DEBRIS, "mcl_core:emerald"},
+            {EGG, "mcl_core:glass", EGG}
+        }
+    })
+    if minetest.settings:get_bool("spawncraft_villager") then
+        minetest.register_craft({
+            output = "mobs_mc:illusioner",
+            type = "shapeless",
+            recipe = {"mobs_mc:villager", "mcl_core:glass"}
+        })
+    end
+    if minetest.settings:get_bool("spawncraft_pillager") then
+        minetest.register_craft({
+            output = "mobs_mc:illusioner",
+            type = "shapeless",
+            recipe = {"mobs_mc:pillager", "mcl_core:glass"}
+        })
+    end
+    if minetest.settings:get_bool("spawncraft_evoker") then
+        minetest.register_craft({
+            output = "mobs_mc:illusioner",
+            type = "shapeless",
+            recipe = {"mobs_mc:evoker", "mcl_core:glass"}
+        })
+    end
+    if minetest.settings:get_bool("spawncraft_vindicator") then
+        minetest.register_craft({
+            output = "mobs_mc:illusioner",
+            type = "shapeless",
+            recipe = {"mobs_mc:vindicator", "mcl_core:glass"}
+        })
+    end
+end
+
+if minetest.settings:get_bool("spawncraft_vex") then
+    minetest.register_craft({
+        output = "mobs_mc:vex",
+        recipe = {
+            {EGG, "mcl_core:emerald", EGG},
+            {"mcl_core:sword_iron", DEBRIS, "mcl_core:sword_iron"},
+            {EGG, "mcl_core:emerald", EGG}
+        }
+    })
+    if minetest.settings:get_bool("spawncraft_evoker") then
+        minetest.register_craft({
+            output = "mobs_mc:vex 4",
+            recipe = {"mobs_mc:evoker"}
+        })
+    end
+end
+
+if minetest.settings:get_bool("spawncraft_ravager", true) then
+    minetest.register_craft({
+        output = "mobs_mc:ravager",
+        recipe = {
+            {EGG, "mcl_mobitems:saddle", EGG},
+            {"mcl_core:emerald", DEBRIS, "mcl_core:emerald"},
+            {EGG, "", EGG}
+        }
+    })
+end
+
+if minetest.settings:get_bool("spawncraft_witch", true) then
+    minetest.register_craft({
+        output = "mcl_mobs:witch",
+        recipe = {
+            {EGG, "mcl_potions:water", EGG},
+            {"mcl_potions:water", DEBRIS, "mcl_potions:water"},
+            {EGG, "mcl_potions:water", EGG}
+        }
+    })
+end
