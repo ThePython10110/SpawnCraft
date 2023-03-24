@@ -987,13 +987,12 @@ if minetest.settings:get_bool("spawncraft_guardian", true) then
             {EGG, "mcl_ocean:sea_lantern", EGG}
         }
     })
+
     if minetest.settings:get_bool("spawncraft_elder_guardian", true) then
         minetest.register_craft({
             output = "mobs_mc:guardian 4",
             type = "shapeless",
-            recipe = {
-                {"mobs_mc:guardian_elder"}
-            }
+            recipe = {"mobs_mc:guardian_elder"}
         })
     end
 end
