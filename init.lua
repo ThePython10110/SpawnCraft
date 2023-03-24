@@ -1254,7 +1254,7 @@ end
 
 if minetest.settings:get_bool("spawncraft_witch", true) then
     minetest.register_craft({
-        output = "mcl_mobs:witch",
+        output = "mobs_mc:witch",
         recipe = {
             {EGG, "mcl_potions:water", EGG},
             {"mcl_potions:water", DEBRIS, "mcl_potions:water"},
