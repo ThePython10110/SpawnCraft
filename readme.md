@@ -7,5 +7,6 @@ The recipes appear in the crafting guide, so I'm not going to include a full lis
 
 ![Wither recipe](images/wither.png)
 ![Spawner recipe](images/spawner.png)
+![Spawner in world](images/demo.png)
 ![Craft guide](images/craft_guide.png)
 ![Settings](images/settings.png)

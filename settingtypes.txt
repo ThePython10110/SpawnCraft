@@ -25,9 +25,6 @@ spawncraft_cave_spider (Allow cave spider egg recipe) bool true
 #	Allows crafting bat eggs
 spawncraft_bat (Allow bat egg recipe) bool true
 
-#	Allows crafting cat eggs
-spawncraft_cat (Allow cat egg recipe) bool true
-
 #	Allows crafting chicken eggs
 spawncraft_chicken (Allow chicken egg recipe) bool true
 
@@ -61,8 +58,8 @@ spawncraft_salmon (Allow salmon egg recipe) bool true
 #	Allows crafting sheep eggs
 spawncraft_sheep (Allow sheep egg recipe) bool true
 
-#	Allows crafting snow golen eggs
-spawncraft_snow_golen (Allow snow golen egg recipe) bool true
+#	Allows crafting snow golem eggs
+spawncraft_snow_golem (Allow snow golem egg recipe) bool true
 
 #	Allows crafting squid eggs
 spawncraft_squid (Allow squid egg recipe) bool true
@@ -72,9 +69,6 @@ spawncraft_strider (Allow strider egg recipe) bool true
 
 #	Allows crafting villager eggs
 spawncraft_villager (Allow villager egg recipe) bool true
-
-#	Allows crafting bee eggs
-spawncraft_bee (Allow bee egg recipe) bool true
 
 #	Allows crafting enderman eggs
 spawncraft_enderman (Allow enderman egg recipe) bool true
